@@ -772,38 +772,50 @@
         </span>
       </li>
       
-        <li style="display: none" data-benchmark="sudoku">
+        <li style="display: none" data-benchmark="structaref">
         <span style='background: #999900'>&nbsp;&nbsp;
+          <strong style="color: white;">structaref no-jit</strong> &nbsp;&nbsp;
+        </span>
+      </li>
+      
+        <li style="display: none" data-benchmark="structaref">
+        <span style='background: #003399'>&nbsp;&nbsp;
+          <strong style="color: white;">structaref yjit</strong> &nbsp;&nbsp;
+        </span>
+      </li>
+      
+        <li style="display: none" data-benchmark="sudoku">
+        <span style='background: #00cc00'>&nbsp;&nbsp;
           <strong style="color: white;">sudoku no-jit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="sudoku">
-        <span style='background: #003399'>&nbsp;&nbsp;
+        <span style='background: #0066b3'>&nbsp;&nbsp;
           <strong style="color: white;">sudoku yjit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="throw">
-        <span style='background: #00cc00'>&nbsp;&nbsp;
+        <span style='background: #ff8000'>&nbsp;&nbsp;
           <strong style="color: white;">throw no-jit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="throw">
-        <span style='background: #0066b3'>&nbsp;&nbsp;
+        <span style='background: #ffcc00'>&nbsp;&nbsp;
           <strong style="color: white;">throw yjit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="tinygql">
-        <span style='background: #ff8000'>&nbsp;&nbsp;
+        <span style='background: #330099'>&nbsp;&nbsp;
           <strong style="color: white;">tinygql no-jit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="tinygql">
-        <span style='background: #ffcc00'>&nbsp;&nbsp;
+        <span style='background: #990099'>&nbsp;&nbsp;
           <strong style="color: white;">tinygql yjit</strong> &nbsp;&nbsp;
         </span>
       </li>
@@ -1352,8 +1364,17 @@
     
     
     <li>
-      <input type="checkbox" data-benchmark="sudoku" />
+      <input type="checkbox" data-benchmark="structaref" />
       <span style='background: #999900'>
+        &nbsp;&nbsp; <strong style="color: white;">structaref</strong> &nbsp;&nbsp;
+      </span>
+    </li>
+  
+    
+    
+    <li>
+      <input type="checkbox" data-benchmark="sudoku" />
+      <span style='background: #00cc00'>
         &nbsp;&nbsp; <strong style="color: white;">sudoku</strong> &nbsp;&nbsp;
       </span>
     </li>
@@ -1362,7 +1383,7 @@
     
     <li>
       <input type="checkbox" data-benchmark="throw" />
-      <span style='background: #00cc00'>
+      <span style='background: #ff8000'>
         &nbsp;&nbsp; <strong style="color: white;">throw</strong> &nbsp;&nbsp;
       </span>
     </li>
@@ -1371,7 +1392,7 @@
     
     <li>
       <input type="checkbox" data-benchmark="tinygql" />
-      <span style='background: #ff8000'>
+      <span style='background: #330099'>
         &nbsp;&nbsp; <strong style="color: white;">tinygql</strong> &nbsp;&nbsp;
       </span>
     </li>
