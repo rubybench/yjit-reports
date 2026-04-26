@@ -1,0 +1,4959 @@
+<!-- Minimal surrounding tags. We want maximum cut-and-paste potential and browsers do well even without them. -->
+
+<div class="table-wrapper">
+  <table>
+    <thead>
+      
+        <th scope="col" title=nil>bench</th>
+      
+        <th scope="col" title=nil>CRuby 3.4.7 (ms)</th>
+      
+        <th scope="col" title=nil>CRuby 3.4.7 RSD</th>
+      
+        <th scope="col" title=nil>CRuby 4.1.0dev (ms)</th>
+      
+        <th scope="col" title=nil>CRuby 4.1.0dev RSD</th>
+      
+        <th scope="col" title=nil>YJIT 3.4.7 (ms)</th>
+      
+        <th scope="col" title=nil>YJIT 3.4.7 RSD</th>
+      
+        <th scope="col" title=nil>YJIT 4.1.0dev (ms)</th>
+      
+        <th scope="col" title=nil>YJIT 4.1.0dev RSD</th>
+      
+        <th scope="col" title=nil>CRuby 4.1.0dev spd</th>
+      
+        <th scope="col" title=nil>CRuby 4.1.0dev spd RSD</th>
+      
+        <th scope="col" title=nil>YJIT 3.4.7 spd</th>
+      
+        <th scope="col" title=nil>YJIT 3.4.7 spd RSD</th>
+      
+        <th scope="col" title=nil>YJIT 4.1.0dev spd</th>
+      
+        <th scope="col" title=nil>YJIT 4.1.0dev spd RSD</th>
+      
+        <th scope="col" title=nil>% in YJIT</th>
+      
+    </thead>
+    <tbody style="text-align: right;">
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/activerecord/benchmark.rb" title="activerecord repeatedly queries entries in a SQLite table with highly-random names.">activerecord</a>
+            </th>
+          
+            <td>
+            313.5
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            302.6
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            120.7
+            </td>
+          
+            <td>
+            0.11%
+            </td>
+          
+            <td>
+            103.6
+            </td>
+          
+            <td>
+            0.80%
+            </td>
+          
+            <td>
+            1.04x
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            2.60x
+            </td>
+          
+            <td>
+            0.13%
+            </td>
+          
+            <td>
+            <b>3.03x</b>
+            </td>
+          
+            <td>
+            0.80%
+            </td>
+          
+            <td>
+            99.94%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/chunky-png/benchmark.rb" title="A pure-Ruby implementation of PNG encoding">chunky-png</a>
+            </th>
+          
+            <td>
+            834.0
+            </td>
+          
+            <td>
+            0.17%
+            </td>
+          
+            <td>
+            866.6
+            </td>
+          
+            <td>
+            0.16%
+            </td>
+          
+            <td>
+            361.3
+            </td>
+          
+            <td>
+            0.14%
+            </td>
+          
+            <td>
+            392.4
+            </td>
+          
+            <td>
+            0.18%
+            </td>
+          
+            <td>
+            0.96x
+            </td>
+          
+            <td>
+            0.23%
+            </td>
+          
+            <td>
+            2.31x
+            </td>
+          
+            <td>
+            0.22%
+            </td>
+          
+            <td>
+            <b>2.13x</b>
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            100.00%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/erubi-rails/benchmark.rb" title="Uses Rails template rendering to repeatedly render a stubbed Discourse view.">erubi-rails</a>
+            </th>
+          
+            <td>
+            1542.5
+            </td>
+          
+            <td>
+            0.03%
+            </td>
+          
+            <td>
+            1470.9
+            </td>
+          
+            <td>
+            0.03%
+            </td>
+          
+            <td>
+            667.8
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            588.2
+            </td>
+          
+            <td>
+            0.03%
+            </td>
+          
+            <td>
+            1.05x
+            </td>
+          
+            <td>
+            0.04%
+            </td>
+          
+            <td>
+            2.31x
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            <b>2.62x</b>
+            </td>
+          
+            <td>
+            0.04%
+            </td>
+          
+            <td>
+            99.61%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/hexapdf/benchmark.rb" title="hexapdf benchmarks the hexapdf Ruby gem by line-wrapping The Odyssey with specific line-length and font.">hexapdf</a>
+            </th>
+          
+            <td>
+            2759.9
+            </td>
+          
+            <td>
+            0.82%
+            </td>
+          
+            <td>
+            2715.1
+            </td>
+          
+            <td>
+            0.69%
+            </td>
+          
+            <td>
+            1447.6
+            </td>
+          
+            <td>
+            1.88%
+            </td>
+          
+            <td>
+            1316.0
+            </td>
+          
+            <td>
+            3.78%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            1.07%
+            </td>
+          
+            <td>
+            1.91x
+            </td>
+          
+            <td>
+            2.05%
+            </td>
+          
+            <td>
+            <b>2.10x</b>
+            </td>
+          
+            <td>
+            3.87%
+            </td>
+          
+            <td>
+            97.74%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/liquid-c/benchmark.rb" title="liquid-c renders a chosen-for-profiling Liquid theme repeatedly.">liquid-c</a>
+            </th>
+          
+            <td>
+            70.3
+            </td>
+          
+            <td>
+            0.44%
+            </td>
+          
+            <td>
+            68.2
+            </td>
+          
+            <td>
+            4.66%
+            </td>
+          
+            <td>
+            45.0
+            </td>
+          
+            <td>
+            0.66%
+            </td>
+          
+            <td>
+            42.2
+            </td>
+          
+            <td>
+            8.48%
+            </td>
+          
+            <td>
+            1.03x
+            </td>
+          
+            <td>
+            4.68%
+            </td>
+          
+            <td>
+            1.56x
+            </td>
+          
+            <td>
+            0.79%
+            </td>
+          
+            <td>
+            <b>1.67x</b>
+            </td>
+          
+            <td>
+            8.49%
+            </td>
+          
+            <td>
+            99.79%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/liquid-compile/benchmark.rb" title="compiles a chosen-for-profiling Liquid theme repeatedly.">liquid-compile</a>
+            </th>
+          
+            <td>
+            71.1
+            </td>
+          
+            <td>
+            1.79%
+            </td>
+          
+            <td>
+            62.4
+            </td>
+          
+            <td>
+            6.42%
+            </td>
+          
+            <td>
+            50.6
+            </td>
+          
+            <td>
+            0.17%
+            </td>
+          
+            <td>
+            37.9
+            </td>
+          
+            <td>
+            10.42%
+            </td>
+          
+            <td>
+            1.14x
+            </td>
+          
+            <td>
+            6.66%
+            </td>
+          
+            <td>
+            1.41x
+            </td>
+          
+            <td>
+            1.80%
+            </td>
+          
+            <td>
+            <b>1.88x</b>
+            </td>
+          
+            <td>
+            10.57%
+            </td>
+          
+            <td>
+            99.95%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/liquid-render/benchmark.rb" title="renders a chosen-for-profiling Liquid theme repeatedly.">liquid-render</a>
+            </th>
+          
+            <td>
+            173.9
+            </td>
+          
+            <td>
+            0.21%
+            </td>
+          
+            <td>
+            169.7
+            </td>
+          
+            <td>
+            1.76%
+            </td>
+          
+            <td>
+            62.1
+            </td>
+          
+            <td>
+            0.29%
+            </td>
+          
+            <td>
+            58.7
+            </td>
+          
+            <td>
+            5.76%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            1.78%
+            </td>
+          
+            <td>
+            2.80x
+            </td>
+          
+            <td>
+            0.36%
+            </td>
+          
+            <td>
+            <b>2.96x</b>
+            </td>
+          
+            <td>
+            5.76%
+            </td>
+          
+            <td>
+            99.90%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/lobsters/benchmark.rb" title="test a wide variety of routes in the Lobste.rs Rails app">lobsters</a>
+            </th>
+          
+            <td>
+            1229.7
+            </td>
+          
+            <td>
+            0.56%
+            </td>
+          
+            <td>
+            1197.8
+            </td>
+          
+            <td>
+            0.43%
+            </td>
+          
+            <td>
+            727.0
+            </td>
+          
+            <td>
+            0.94%
+            </td>
+          
+            <td>
+            696.5
+            </td>
+          
+            <td>
+            0.71%
+            </td>
+          
+            <td>
+            1.03x
+            </td>
+          
+            <td>
+            0.71%
+            </td>
+          
+            <td>
+            1.69x
+            </td>
+          
+            <td>
+            1.10%
+            </td>
+          
+            <td>
+            <b>1.77x</b>
+            </td>
+          
+            <td>
+            0.91%
+            </td>
+          
+            <td>
+            99.52%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/mail/benchmark.rb" title="mail tests the Mail gem by repeatedly creating an email from a text file and converting it to a string for sending.">mail</a>
+            </th>
+          
+            <td>
+            150.7
+            </td>
+          
+            <td>
+            0.27%
+            </td>
+          
+            <td>
+            146.8
+            </td>
+          
+            <td>
+            2.32%
+            </td>
+          
+            <td>
+            98.1
+            </td>
+          
+            <td>
+            0.30%
+            </td>
+          
+            <td>
+            87.8
+            </td>
+          
+            <td>
+            3.79%
+            </td>
+          
+            <td>
+            1.03x
+            </td>
+          
+            <td>
+            2.34%
+            </td>
+          
+            <td>
+            1.54x
+            </td>
+          
+            <td>
+            0.40%
+            </td>
+          
+            <td>
+            <b>1.72x</b>
+            </td>
+          
+            <td>
+            3.80%
+            </td>
+          
+            <td>
+            99.87%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/psych-load/benchmark.rb" title="psych-load repeatedly loads a small selection of YAML files taken from various OSS projects.">psych-load</a>
+            </th>
+          
+            <td>
+            2454.0
+            </td>
+          
+            <td>
+            0.04%
+            </td>
+          
+            <td>
+            2416.6
+            </td>
+          
+            <td>
+            1.55%
+            </td>
+          
+            <td>
+            1416.0
+            </td>
+          
+            <td>
+            0.02%
+            </td>
+          
+            <td>
+            1357.8
+            </td>
+          
+            <td>
+            1.00%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            1.55%
+            </td>
+          
+            <td>
+            1.73x
+            </td>
+          
+            <td>
+            0.05%
+            </td>
+          
+            <td>
+            <b>1.81x</b>
+            </td>
+          
+            <td>
+            1.00%
+            </td>
+          
+            <td>
+            100.00%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/railsbench/benchmark.rb" title="railsbench is a read-only tiny SQLite-backed Rails app, querying a small selection of .html.erb routes and JSON routes.">railsbench</a>
+            </th>
+          
+            <td>
+            3118.4
+            </td>
+          
+            <td>
+            0.03%
+            </td>
+          
+            <td>
+            2972.7
+            </td>
+          
+            <td>
+            0.35%
+            </td>
+          
+            <td>
+            1572.3
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            1379.8
+            </td>
+          
+            <td>
+            0.26%
+            </td>
+          
+            <td>
+            1.05x
+            </td>
+          
+            <td>
+            0.35%
+            </td>
+          
+            <td>
+            1.98x
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            <b>2.26x</b>
+            </td>
+          
+            <td>
+            0.26%
+            </td>
+          
+            <td>
+            99.71%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/rubocop/benchmark.rb" title="Run the RuboCop auto correction on a sizable file.">rubocop</a>
+            </th>
+          
+            <td>
+            186.2
+            </td>
+          
+            <td>
+            0.45%
+            </td>
+          
+            <td>
+            188.8
+            </td>
+          
+            <td>
+            4.72%
+            </td>
+          
+            <td>
+            95.0
+            </td>
+          
+            <td>
+            1.06%
+            </td>
+          
+            <td>
+            91.7
+            </td>
+          
+            <td>
+            0.11%
+            </td>
+          
+            <td>
+            0.99x
+            </td>
+          
+            <td>
+            4.74%
+            </td>
+          
+            <td>
+            1.96x
+            </td>
+          
+            <td>
+            1.15%
+            </td>
+          
+            <td>
+            <b>2.03x</b>
+            </td>
+          
+            <td>
+            0.47%
+            </td>
+          
+            <td>
+            99.57%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/ruby-lsp/benchmark.rb" title="Run the Ruby LSP's indexing mechanism.">ruby-lsp</a>
+            </th>
+          
+            <td>
+            184.1
+            </td>
+          
+            <td>
+            0.69%
+            </td>
+          
+            <td>
+            183.2
+            </td>
+          
+            <td>
+            0.52%
+            </td>
+          
+            <td>
+            103.5
+            </td>
+          
+            <td>
+            0.14%
+            </td>
+          
+            <td>
+            106.2
+            </td>
+          
+            <td>
+            2.69%
+            </td>
+          
+            <td>
+            1.00x
+            </td>
+          
+            <td>
+            0.87%
+            </td>
+          
+            <td>
+            1.78x
+            </td>
+          
+            <td>
+            0.70%
+            </td>
+          
+            <td>
+            <b>1.73x</b>
+            </td>
+          
+            <td>
+            2.78%
+            </td>
+          
+            <td>
+            99.68%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/sequel/benchmark.rb" title="sequel repeatedly queries entries in a SQLite table with highly-random names.">sequel</a>
+            </th>
+          
+            <td>
+            69.5
+            </td>
+          
+            <td>
+            0.42%
+            </td>
+          
+            <td>
+            67.6
+            </td>
+          
+            <td>
+            3.51%
+            </td>
+          
+            <td>
+            46.4
+            </td>
+          
+            <td>
+            0.53%
+            </td>
+          
+            <td>
+            44.1
+            </td>
+          
+            <td>
+            4.66%
+            </td>
+          
+            <td>
+            1.03x
+            </td>
+          
+            <td>
+            3.53%
+            </td>
+          
+            <td>
+            1.50x
+            </td>
+          
+            <td>
+            0.68%
+            </td>
+          
+            <td>
+            <b>1.57x</b>
+            </td>
+          
+            <td>
+            4.68%
+            </td>
+          
+            <td>
+            99.25%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/shipit/benchmark.rb" title="test a wide variety of routes, both HTML and JSON API in the shipit Rails app">shipit</a>
+            </th>
+          
+            <td>
+            2187.0
+            </td>
+          
+            <td>
+            1.19%
+            </td>
+          
+            <td>
+            2136.0
+            </td>
+          
+            <td>
+            0.75%
+            </td>
+          
+            <td>
+            1031.4
+            </td>
+          
+            <td>
+            3.46%
+            </td>
+          
+            <td>
+            918.6
+            </td>
+          
+            <td>
+            3.03%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            1.41%
+            </td>
+          
+            <td>
+            2.12x
+            </td>
+          
+            <td>
+            3.66%
+            </td>
+          
+            <td>
+            <b>2.38x</b>
+            </td>
+          
+            <td>
+            3.26%
+            </td>
+          
+            <td>
+            99.66%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/addressable-equality/benchmark.rb" title="addressable URI equality comparison">addressable-equality</a>
+            </th>
+          
+            <td>
+            974.9
+            </td>
+          
+            <td>
+            0.11%
+            </td>
+          
+            <td>
+            958.6
+            </td>
+          
+            <td>
+            0.27%
+            </td>
+          
+            <td>
+            487.9
+            </td>
+          
+            <td>
+            0.06%
+            </td>
+          
+            <td>
+            486.0
+            </td>
+          
+            <td>
+            0.46%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            0.29%
+            </td>
+          
+            <td>
+            2.00x
+            </td>
+          
+            <td>
+            0.13%
+            </td>
+          
+            <td>
+            <b>2.01x</b>
+            </td>
+          
+            <td>
+            0.48%
+            </td>
+          
+            <td>
+            99.92%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/addressable-getters/benchmark.rb" title="addressable URI component getters (scheme, host, port, path, query, fragment)">addressable-getters</a>
+            </th>
+          
+            <td>
+            177.0
+            </td>
+          
+            <td>
+            0.17%
+            </td>
+          
+            <td>
+            177.5
+            </td>
+          
+            <td>
+            1.09%
+            </td>
+          
+            <td>
+            129.1
+            </td>
+          
+            <td>
+            0.22%
+            </td>
+          
+            <td>
+            121.7
+            </td>
+          
+            <td>
+            0.90%
+            </td>
+          
+            <td>
+            1.00x
+            </td>
+          
+            <td>
+            1.10%
+            </td>
+          
+            <td>
+            1.37x
+            </td>
+          
+            <td>
+            0.27%
+            </td>
+          
+            <td>
+            <b>1.45x</b>
+            </td>
+          
+            <td>
+            0.91%
+            </td>
+          
+            <td>
+            99.81%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/addressable-join/benchmark.rb" title="addressable URI joining/merging paths">addressable-join</a>
+            </th>
+          
+            <td>
+            380.9
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            360.6
+            </td>
+          
+            <td>
+            0.86%
+            </td>
+          
+            <td>
+            263.5
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            247.3
+            </td>
+          
+            <td>
+            1.09%
+            </td>
+          
+            <td>
+            1.06x
+            </td>
+          
+            <td>
+            0.89%
+            </td>
+          
+            <td>
+            1.45x
+            </td>
+          
+            <td>
+            0.29%
+            </td>
+          
+            <td>
+            <b>1.54x</b>
+            </td>
+          
+            <td>
+            1.11%
+            </td>
+          
+            <td>
+            99.82%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/addressable-merge/benchmark.rb" title="addressable URI merging options">addressable-merge</a>
+            </th>
+          
+            <td>
+            180.8
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            192.2
+            </td>
+          
+            <td>
+            0.95%
+            </td>
+          
+            <td>
+            110.0
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            110.7
+            </td>
+          
+            <td>
+            0.90%
+            </td>
+          
+            <td>
+            0.94x
+            </td>
+          
+            <td>
+            0.96%
+            </td>
+          
+            <td>
+            1.64x
+            </td>
+          
+            <td>
+            0.21%
+            </td>
+          
+            <td>
+            <b>1.63x</b>
+            </td>
+          
+            <td>
+            0.91%
+            </td>
+          
+            <td>
+            99.84%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/addressable-new/benchmark.rb" title="addressable URI construction from hash">addressable-new</a>
+            </th>
+          
+            <td>
+            84.5
+            </td>
+          
+            <td>
+            0.32%
+            </td>
+          
+            <td>
+            87.3
+            </td>
+          
+            <td>
+            0.56%
+            </td>
+          
+            <td>
+            53.0
+            </td>
+          
+            <td>
+            0.38%
+            </td>
+          
+            <td>
+            53.4
+            </td>
+          
+            <td>
+            0.88%
+            </td>
+          
+            <td>
+            0.97x
+            </td>
+          
+            <td>
+            0.64%
+            </td>
+          
+            <td>
+            1.60x
+            </td>
+          
+            <td>
+            0.49%
+            </td>
+          
+            <td>
+            <b>1.58x</b>
+            </td>
+          
+            <td>
+            0.93%
+            </td>
+          
+            <td>
+            99.84%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/addressable-normalize/benchmark.rb" title="addressable URI normalization">addressable-normalize</a>
+            </th>
+          
+            <td>
+            530.0
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            522.6
+            </td>
+          
+            <td>
+            0.47%
+            </td>
+          
+            <td>
+            273.0
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            275.7
+            </td>
+          
+            <td>
+            0.65%
+            </td>
+          
+            <td>
+            1.01x
+            </td>
+          
+            <td>
+            0.49%
+            </td>
+          
+            <td>
+            1.94x
+            </td>
+          
+            <td>
+            0.14%
+            </td>
+          
+            <td>
+            <b>1.92x</b>
+            </td>
+          
+            <td>
+            0.66%
+            </td>
+          
+            <td>
+            99.86%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/addressable-parse/benchmark.rb" title="addressable URI parsing (simple and complex URIs)">addressable-parse</a>
+            </th>
+          
+            <td>
+            278.4
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            281.2
+            </td>
+          
+            <td>
+            0.63%
+            </td>
+          
+            <td>
+            196.3
+            </td>
+          
+            <td>
+            0.11%
+            </td>
+          
+            <td>
+            187.0
+            </td>
+          
+            <td>
+            0.68%
+            </td>
+          
+            <td>
+            0.99x
+            </td>
+          
+            <td>
+            0.63%
+            </td>
+          
+            <td>
+            1.42x
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            <b>1.49x</b>
+            </td>
+          
+            <td>
+            0.68%
+            </td>
+          
+            <td>
+            99.82%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/addressable-setters/benchmark.rb" title="addressable URI component setters (scheme, host, path modification)">addressable-setters</a>
+            </th>
+          
+            <td>
+            158.7
+            </td>
+          
+            <td>
+            0.11%
+            </td>
+          
+            <td>
+            164.8
+            </td>
+          
+            <td>
+            1.08%
+            </td>
+          
+            <td>
+            106.7
+            </td>
+          
+            <td>
+            0.20%
+            </td>
+          
+            <td>
+            104.4
+            </td>
+          
+            <td>
+            0.96%
+            </td>
+          
+            <td>
+            0.96x
+            </td>
+          
+            <td>
+            1.08%
+            </td>
+          
+            <td>
+            1.49x
+            </td>
+          
+            <td>
+            0.23%
+            </td>
+          
+            <td>
+            <b>1.52x</b>
+            </td>
+          
+            <td>
+            0.97%
+            </td>
+          
+            <td>
+            99.83%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/addressable-to-s/benchmark.rb" title="addressable URI to string conversion">addressable-to-s</a>
+            </th>
+          
+            <td>
+            178.3
+            </td>
+          
+            <td>
+            0.16%
+            </td>
+          
+            <td>
+            178.3
+            </td>
+          
+            <td>
+            1.08%
+            </td>
+          
+            <td>
+            129.7
+            </td>
+          
+            <td>
+            0.22%
+            </td>
+          
+            <td>
+            122.1
+            </td>
+          
+            <td>
+            0.88%
+            </td>
+          
+            <td>
+            1.00x
+            </td>
+          
+            <td>
+            1.10%
+            </td>
+          
+            <td>
+            1.37x
+            </td>
+          
+            <td>
+            0.27%
+            </td>
+          
+            <td>
+            <b>1.46x</b>
+            </td>
+          
+            <td>
+            0.89%
+            </td>
+          
+            <td>
+            99.81%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/binarytrees/benchmark.rb" title="binarytrees from the Computer Language Benchmarks Game.">binarytrees</a>
+            </th>
+          
+            <td>
+            348.0
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            333.6
+            </td>
+          
+            <td>
+            0.77%
+            </td>
+          
+            <td>
+            161.3
+            </td>
+          
+            <td>
+            0.14%
+            </td>
+          
+            <td>
+            157.8
+            </td>
+          
+            <td>
+            0.91%
+            </td>
+          
+            <td>
+            1.04x
+            </td>
+          
+            <td>
+            0.78%
+            </td>
+          
+            <td>
+            2.16x
+            </td>
+          
+            <td>
+            0.18%
+            </td>
+          
+            <td>
+            <b>2.20x</b>
+            </td>
+          
+            <td>
+            0.92%
+            </td>
+          
+            <td>
+            100.00%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/blurhash/benchmark.rb" title="blurhash (blurred preview image) calculation">blurhash</a>
+            </th>
+          
+            <td>
+            340.8
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            339.3
+            </td>
+          
+            <td>
+            0.14%
+            </td>
+          
+            <td>
+            154.4
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            154.3
+            </td>
+          
+            <td>
+            0.06%
+            </td>
+          
+            <td>
+            1.00x
+            </td>
+          
+            <td>
+            0.20%
+            </td>
+          
+            <td>
+            2.21x
+            </td>
+          
+            <td>
+            0.16%
+            </td>
+          
+            <td>
+            <b>2.21x</b>
+            </td>
+          
+            <td>
+            0.16%
+            </td>
+          
+            <td>
+            99.99%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/erubi/benchmark.rb" title="erubi compiles a simple Erb template into a method with erubi, then times evaluating that method.">erubi</a>
+            </th>
+          
+            <td>
+            213.7
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            198.5
+            </td>
+          
+            <td>
+            0.40%
+            </td>
+          
+            <td>
+            164.1
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            150.8
+            </td>
+          
+            <td>
+            0.29%
+            </td>
+          
+            <td>
+            1.08x
+            </td>
+          
+            <td>
+            0.41%
+            </td>
+          
+            <td>
+            1.30x
+            </td>
+          
+            <td>
+            0.18%
+            </td>
+          
+            <td>
+            <b>1.42x</b>
+            </td>
+          
+            <td>
+            0.31%
+            </td>
+          
+            <td>
+            99.98%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/etanni/benchmark.rb" title="etanni is an older, extremely simple template-lang format that basically turns your template into an &quot;eval&quot; with a lot of heredocs.">etanni</a>
+            </th>
+          
+            <td>
+            287.4
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            369.3
+            </td>
+          
+            <td>
+            0.28%
+            </td>
+          
+            <td>
+            245.9
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            318.9
+            </td>
+          
+            <td>
+            0.19%
+            </td>
+          
+            <td>
+            0.78x
+            </td>
+          
+            <td>
+            0.30%
+            </td>
+          
+            <td>
+            1.17x
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            <b>0.90x</b>
+            </td>
+          
+            <td>
+            0.22%
+            </td>
+          
+            <td>
+            99.98%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/fannkuchredux/benchmark.rb" title="fannkuchredux from the Computer Language Benchmarks Game.">fannkuchredux</a>
+            </th>
+          
+            <td>
+            501.6
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            491.5
+            </td>
+          
+            <td>
+            0.55%
+            </td>
+          
+            <td>
+            127.5
+            </td>
+          
+            <td>
+            0.13%
+            </td>
+          
+            <td>
+            125.7
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            0.56%
+            </td>
+          
+            <td>
+            3.93x
+            </td>
+          
+            <td>
+            0.18%
+            </td>
+          
+            <td>
+            <b>3.99x</b>
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            61.85%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/fluentd/benchmark.rb" title="fluentd is a log collector, which parses logs in a server and forwards them to various destinations.">fluentd</a>
+            </th>
+          
+            <td>
+            497.7
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            469.5
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            406.6
+            </td>
+          
+            <td>
+            0.20%
+            </td>
+          
+            <td>
+            369.5
+            </td>
+          
+            <td>
+            0.21%
+            </td>
+          
+            <td>
+            1.06x
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            1.22x
+            </td>
+          
+            <td>
+            0.22%
+            </td>
+          
+            <td>
+            <b>1.35x</b>
+            </td>
+          
+            <td>
+            0.22%
+            </td>
+          
+            <td>
+            99.97%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/gcbench.rb" title="Ellis-Kovac-Boehm GCBench builds binary trees of various depths to exercise GC marking, sweeping, and write barriers.">gcbench</a>
+            </th>
+          
+            <td>
+            2829.6
+            </td>
+          
+            <td>
+            0.02%
+            </td>
+          
+            <td>
+            2117.2
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            1360.4
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            464.4
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            1.34x
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            2.08x
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            <b>6.09x</b>
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            99.99%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/graphql/benchmark.rb" title="GraphQL gem parsing a large file, uses Racc which has some Ruby->native->Ruby calls">graphql</a>
+            </th>
+          
+            <td>
+            79.5
+            </td>
+          
+            <td>
+            0.54%
+            </td>
+          
+            <td>
+            67.6
+            </td>
+          
+            <td>
+            0.29%
+            </td>
+          
+            <td>
+            48.4
+            </td>
+          
+            <td>
+            0.85%
+            </td>
+          
+            <td>
+            29.9
+            </td>
+          
+            <td>
+            0.57%
+            </td>
+          
+            <td>
+            1.17x
+            </td>
+          
+            <td>
+            0.62%
+            </td>
+          
+            <td>
+            1.64x
+            </td>
+          
+            <td>
+            1.01%
+            </td>
+          
+            <td>
+            <b>2.65x</b>
+            </td>
+          
+            <td>
+            0.79%
+            </td>
+          
+            <td>
+            99.98%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/graphql-native/benchmark.rb" title="GraphQL gem parsing a large file, but using a native parser">graphql-native</a>
+            </th>
+          
+            <td>
+            475.2
+            </td>
+          
+            <td>
+            0.11%
+            </td>
+          
+            <td>
+            323.9
+            </td>
+          
+            <td>
+            0.17%
+            </td>
+          
+            <td>
+            416.8
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            252.0
+            </td>
+          
+            <td>
+            0.06%
+            </td>
+          
+            <td>
+            1.47x
+            </td>
+          
+            <td>
+            0.20%
+            </td>
+          
+            <td>
+            1.14x
+            </td>
+          
+            <td>
+            0.14%
+            </td>
+          
+            <td>
+            <b>1.89x</b>
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            99.97%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/knucleotide/benchmark.rb" title="k-nucleotide from the Computer Language Benchmarks Game - counts nucleotide frequencies using hash tables in parallel using Process.fork">knucleotide</a>
+            </th>
+          
+            <td>
+            179.0
+            </td>
+          
+            <td>
+            1.14%
+            </td>
+          
+            <td>
+            200.5
+            </td>
+          
+            <td>
+            1.41%
+            </td>
+          
+            <td>
+            180.1
+            </td>
+          
+            <td>
+            2.29%
+            </td>
+          
+            <td>
+            204.9
+            </td>
+          
+            <td>
+            0.67%
+            </td>
+          
+            <td>
+            0.89x
+            </td>
+          
+            <td>
+            1.82%
+            </td>
+          
+            <td>
+            0.99x
+            </td>
+          
+            <td>
+            2.56%
+            </td>
+          
+            <td>
+            <b>0.87x</b>
+            </td>
+          
+            <td>
+            1.33%
+            </td>
+          
+            <td>
+            23.49%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/lee/benchmark.rb" title="lee is a circuit-board layout solver, deployed in a plausibly reality-like way">lee</a>
+            </th>
+          
+            <td>
+            1103.2
+            </td>
+          
+            <td>
+            2.04%
+            </td>
+          
+            <td>
+            898.5
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            752.7
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            484.4
+            </td>
+          
+            <td>
+            0.22%
+            </td>
+          
+            <td>
+            1.23x
+            </td>
+          
+            <td>
+            2.05%
+            </td>
+          
+            <td>
+            1.47x
+            </td>
+          
+            <td>
+            2.05%
+            </td>
+          
+            <td>
+            <b>2.28x</b>
+            </td>
+          
+            <td>
+            2.06%
+            </td>
+          
+            <td>
+            99.97%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/matmul/benchmark.rb" title="matrix multiplication benchmark">matmul</a>
+            </th>
+          
+            <td>
+            522.0
+            </td>
+          
+            <td>
+            0.18%
+            </td>
+          
+            <td>
+            498.6
+            </td>
+          
+            <td>
+            0.16%
+            </td>
+          
+            <td>
+            218.6
+            </td>
+          
+            <td>
+            0.38%
+            </td>
+          
+            <td>
+            203.5
+            </td>
+          
+            <td>
+            0.30%
+            </td>
+          
+            <td>
+            1.05x
+            </td>
+          
+            <td>
+            0.24%
+            </td>
+          
+            <td>
+            2.39x
+            </td>
+          
+            <td>
+            0.42%
+            </td>
+          
+            <td>
+            <b>2.57x</b>
+            </td>
+          
+            <td>
+            0.35%
+            </td>
+          
+            <td>
+            99.81%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/nbody/benchmark.rb" title="nbody from the Computer Language Benchmarks Game.">nbody</a>
+            </th>
+          
+            <td>
+            117.9
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            107.5
+            </td>
+          
+            <td>
+            0.24%
+            </td>
+          
+            <td>
+            42.1
+            </td>
+          
+            <td>
+            0.46%
+            </td>
+          
+            <td>
+            39.7
+            </td>
+          
+            <td>
+            0.21%
+            </td>
+          
+            <td>
+            1.10x
+            </td>
+          
+            <td>
+            0.26%
+            </td>
+          
+            <td>
+            2.80x
+            </td>
+          
+            <td>
+            0.47%
+            </td>
+          
+            <td>
+            <b>2.97x</b>
+            </td>
+          
+            <td>
+            0.23%
+            </td>
+          
+            <td>
+            99.79%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/nqueens/benchmark.rb" title="solver for the N-Queens problem">nqueens</a>
+            </th>
+          
+            <td>
+            242.7
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            238.4
+            </td>
+          
+            <td>
+            0.20%
+            </td>
+          
+            <td>
+            48.8
+            </td>
+          
+            <td>
+            0.22%
+            </td>
+          
+            <td>
+            46.9
+            </td>
+          
+            <td>
+            0.13%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            0.24%
+            </td>
+          
+            <td>
+            4.98x
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            <b>5.18x</b>
+            </td>
+          
+            <td>
+            0.18%
+            </td>
+          
+            <td>
+            97.00%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/optcarrot/benchmark.rb" title="optcarrot is a functional headless NES emulator, run on a specific game cartridge for a specific number of frames.">optcarrot</a>
+            </th>
+          
+            <td>
+            5005.2
+            </td>
+          
+            <td>
+            0.18%
+            </td>
+          
+            <td>
+            5365.3
+            </td>
+          
+            <td>
+            0.17%
+            </td>
+          
+            <td>
+            1282.5
+            </td>
+          
+            <td>
+            1.46%
+            </td>
+          
+            <td>
+            1399.1
+            </td>
+          
+            <td>
+            1.58%
+            </td>
+          
+            <td>
+            0.93x
+            </td>
+          
+            <td>
+            0.24%
+            </td>
+          
+            <td>
+            3.90x
+            </td>
+          
+            <td>
+            1.48%
+            </td>
+          
+            <td>
+            <b>3.58x</b>
+            </td>
+          
+            <td>
+            1.59%
+            </td>
+          
+            <td>
+            99.49%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/protoboeuf/benchmark.rb" title="protoboeuf (pure-Ruby protobuf) message decoding">protoboeuf</a>
+            </th>
+          
+            <td>
+            166.8
+            </td>
+          
+            <td>
+            0.06%
+            </td>
+          
+            <td>
+            159.8
+            </td>
+          
+            <td>
+            0.23%
+            </td>
+          
+            <td>
+            40.1
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            35.7
+            </td>
+          
+            <td>
+            0.93%
+            </td>
+          
+            <td>
+            1.04x
+            </td>
+          
+            <td>
+            0.24%
+            </td>
+          
+            <td>
+            4.16x
+            </td>
+          
+            <td>
+            0.11%
+            </td>
+          
+            <td>
+            <b>4.67x</b>
+            </td>
+          
+            <td>
+            0.94%
+            </td>
+          
+            <td>
+            99.99%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/protoboeuf-encode/benchmark.rb" title="protoboeuf (pure-Ruby protobuf) message encoding">protoboeuf-encode</a>
+            </th>
+          
+            <td>
+            146.5
+            </td>
+          
+            <td>
+            1.07%
+            </td>
+          
+            <td>
+            151.8
+            </td>
+          
+            <td>
+            1.12%
+            </td>
+          
+            <td>
+            35.0
+            </td>
+          
+            <td>
+            4.28%
+            </td>
+          
+            <td>
+            33.8
+            </td>
+          
+            <td>
+            1.56%
+            </td>
+          
+            <td>
+            0.97x
+            </td>
+          
+            <td>
+            1.55%
+            </td>
+          
+            <td>
+            4.18x
+            </td>
+          
+            <td>
+            4.41%
+            </td>
+          
+            <td>
+            <b>4.34x</b>
+            </td>
+          
+            <td>
+            1.89%
+            </td>
+          
+            <td>
+            99.99%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/rack/benchmark.rb" title="test the performance of the Rack framework with barely any routing.">rack</a>
+            </th>
+          
+            <td>
+            67.2
+            </td>
+          
+            <td>
+            0.48%
+            </td>
+          
+            <td>
+            66.1
+            </td>
+          
+            <td>
+            2.64%
+            </td>
+          
+            <td>
+            39.4
+            </td>
+          
+            <td>
+            0.55%
+            </td>
+          
+            <td>
+            38.6
+            </td>
+          
+            <td>
+            4.04%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            2.68%
+            </td>
+          
+            <td>
+            1.71x
+            </td>
+          
+            <td>
+            0.73%
+            </td>
+          
+            <td>
+            <b>1.74x</b>
+            </td>
+          
+            <td>
+            4.07%
+            </td>
+          
+            <td>
+            99.86%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/ruby-json/benchmark.rb" title="an optimized version of the json_pure gem's pure Ruby JSON parser.">ruby-json</a>
+            </th>
+          
+            <td>
+            340.4
+            </td>
+          
+            <td>
+            0.06%
+            </td>
+          
+            <td>
+            275.3
+            </td>
+          
+            <td>
+            0.31%
+            </td>
+          
+            <td>
+            300.4
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            224.0
+            </td>
+          
+            <td>
+            0.24%
+            </td>
+          
+            <td>
+            1.24x
+            </td>
+          
+            <td>
+            0.32%
+            </td>
+          
+            <td>
+            1.13x
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            <b>1.52x</b>
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            99.98%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/rubyboy/benchmark.rb" title="Rubyboy is a functional headless GameBoy emulator, run on a specific game cartridge for a specific number of frames.">rubyboy</a>
+            </th>
+          
+            <td>
+            5396.6
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            5556.7
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            1364.4
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            1370.5
+            </td>
+          
+            <td>
+            0.17%
+            </td>
+          
+            <td>
+            0.97x
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            3.96x
+            </td>
+          
+            <td>
+            0.19%
+            </td>
+          
+            <td>
+            <b>3.94x</b>
+            </td>
+          
+            <td>
+            0.21%
+            </td>
+          
+            <td>
+            100.00%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/rubykon/benchmark.rb" title="Ruby solver for Go (the boardgame.) Runs many iterations forward from an initial starting board.">rubykon</a>
+            </th>
+          
+            <td>
+            1166.9
+            </td>
+          
+            <td>
+            1.41%
+            </td>
+          
+            <td>
+            1113.2
+            </td>
+          
+            <td>
+            1.31%
+            </td>
+          
+            <td>
+            530.9
+            </td>
+          
+            <td>
+            1.08%
+            </td>
+          
+            <td>
+            516.5
+            </td>
+          
+            <td>
+            1.15%
+            </td>
+          
+            <td>
+            1.05x
+            </td>
+          
+            <td>
+            1.92%
+            </td>
+          
+            <td>
+            2.20x
+            </td>
+          
+            <td>
+            1.77%
+            </td>
+          
+            <td>
+            <b>2.26x</b>
+            </td>
+          
+            <td>
+            1.82%
+            </td>
+          
+            <td>
+            99.96%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/splay.rb" title="Splay tree operations (insert, find, remove) to stress GC.">splay</a>
+            </th>
+          
+            <td>
+            140.5
+            </td>
+          
+            <td>
+            63.31%
+            </td>
+          
+            <td>
+            130.7
+            </td>
+          
+            <td>
+            64.50%
+            </td>
+          
+            <td>
+            101.3
+            </td>
+          
+            <td>
+            104.68%
+            </td>
+          
+            <td>
+            88.7
+            </td>
+          
+            <td>
+            98.97%
+            </td>
+          
+            <td>
+            1.07x
+            </td>
+          
+            <td>
+            90.38%
+            </td>
+          
+            <td>
+            1.39x
+            </td>
+          
+            <td>
+            122.34%
+            </td>
+          
+            <td>
+            <b>1.58x</b>
+            </td>
+          
+            <td>
+            117.48%
+            </td>
+          
+            <td>
+            99.98%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/sudoku/benchmark.rb" title="sudoku solver">sudoku</a>
+            </th>
+          
+            <td>
+            566.3
+            </td>
+          
+            <td>
+            0.04%
+            </td>
+          
+            <td>
+            563.0
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            146.2
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            143.8
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            1.01x
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            3.87x
+            </td>
+          
+            <td>
+            0.11%
+            </td>
+          
+            <td>
+            <b>3.94x</b>
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            99.68%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/tinygql/benchmark.rb" title="TinyGQL gem parsing a large file in pure Ruby">tinygql</a>
+            </th>
+          
+            <td>
+            672.8
+            </td>
+          
+            <td>
+            0.04%
+            </td>
+          
+            <td>
+            686.1
+            </td>
+          
+            <td>
+            0.37%
+            </td>
+          
+            <td>
+            335.4
+            </td>
+          
+            <td>
+            0.04%
+            </td>
+          
+            <td>
+            297.7
+            </td>
+          
+            <td>
+            0.23%
+            </td>
+          
+            <td>
+            0.98x
+            </td>
+          
+            <td>
+            0.37%
+            </td>
+          
+            <td>
+            2.01x
+            </td>
+          
+            <td>
+            0.06%
+            </td>
+          
+            <td>
+            <b>2.26x</b>
+            </td>
+          
+            <td>
+            0.23%
+            </td>
+          
+            <td>
+            99.99%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/30k_ifelse.rb" title="30k_ifelse tests thousands of nested methods containing simple if/else statements.">30k_ifelse</a>
+            </th>
+          
+            <td>
+            928.8
+            </td>
+          
+            <td>
+            0.01%
+            </td>
+          
+            <td>
+            913.9
+            </td>
+          
+            <td>
+            0.02%
+            </td>
+          
+            <td>
+            120.8
+            </td>
+          
+            <td>
+            0.06%
+            </td>
+          
+            <td>
+            120.4
+            </td>
+          
+            <td>
+            0.06%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            0.02%
+            </td>
+          
+            <td>
+            7.69x
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            <b>7.71x</b>
+            </td>
+          
+            <td>
+            0.06%
+            </td>
+          
+            <td>
+            99.95%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/30k_methods.rb" title="30k_methods tests thousands of nested method calls that mostly just call out to other single-call methods.">30k_methods</a>
+            </th>
+          
+            <td>
+            701.6
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            687.7
+            </td>
+          
+            <td>
+            0.03%
+            </td>
+          
+            <td>
+            58.4
+            </td>
+          
+            <td>
+            0.23%
+            </td>
+          
+            <td>
+            58.7
+            </td>
+          
+            <td>
+            0.19%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            12.00x
+            </td>
+          
+            <td>
+            0.24%
+            </td>
+          
+            <td>
+            <b>11.96x</b>
+            </td>
+          
+            <td>
+            0.20%
+            </td>
+          
+            <td>
+            99.94%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/attr_accessor.rb" title="attr_accessor tests the performance of getting instance variable values via an attr_accessor imemo.">attr_accessor</a>
+            </th>
+          
+            <td>
+            186.2
+            </td>
+          
+            <td>
+            0.83%
+            </td>
+          
+            <td>
+            165.9
+            </td>
+          
+            <td>
+            0.66%
+            </td>
+          
+            <td>
+            13.3
+            </td>
+          
+            <td>
+            0.57%
+            </td>
+          
+            <td>
+            13.2
+            </td>
+          
+            <td>
+            0.35%
+            </td>
+          
+            <td>
+            1.12x
+            </td>
+          
+            <td>
+            1.07%
+            </td>
+          
+            <td>
+            14.05x
+            </td>
+          
+            <td>
+            1.01%
+            </td>
+          
+            <td>
+            <b>14.07x</b>
+            </td>
+          
+            <td>
+            0.90%
+            </td>
+          
+            <td>
+            64.82%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/cfunc_itself.rb" title="cfunc_itself just calls the 'itself' method many, many times.">cfunc_itself</a>
+            </th>
+          
+            <td>
+            85.7
+            </td>
+          
+            <td>
+            1.48%
+            </td>
+          
+            <td>
+            90.8
+            </td>
+          
+            <td>
+            1.02%
+            </td>
+          
+            <td>
+            22.7
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            22.7
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            0.94x
+            </td>
+          
+            <td>
+            1.80%
+            </td>
+          
+            <td>
+            3.77x
+            </td>
+          
+            <td>
+            1.48%
+            </td>
+          
+            <td>
+            <b>3.77x</b>
+            </td>
+          
+            <td>
+            1.48%
+            </td>
+          
+            <td>
+            94.28%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/fib.rb" title="Fib is a simple exponential-time recursive Fibonacci number generator.">fib</a>
+            </th>
+          
+            <td>
+            232.3
+            </td>
+          
+            <td>
+            0.14%
+            </td>
+          
+            <td>
+            217.1
+            </td>
+          
+            <td>
+            0.27%
+            </td>
+          
+            <td>
+            30.4
+            </td>
+          
+            <td>
+            0.20%
+            </td>
+          
+            <td>
+            30.4
+            </td>
+          
+            <td>
+            0.21%
+            </td>
+          
+            <td>
+            1.07x
+            </td>
+          
+            <td>
+            0.31%
+            </td>
+          
+            <td>
+            7.65x
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            <b>7.65x</b>
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            100.00%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/getivar.rb" title="getivar tests the performance of getting instance variable values.">getivar</a>
+            </th>
+          
+            <td>
+            136.5
+            </td>
+          
+            <td>
+            0.82%
+            </td>
+          
+            <td>
+            99.5
+            </td>
+          
+            <td>
+            1.64%
+            </td>
+          
+            <td>
+            11.2
+            </td>
+          
+            <td>
+            0.58%
+            </td>
+          
+            <td>
+            11.2
+            </td>
+          
+            <td>
+            0.55%
+            </td>
+          
+            <td>
+            1.37x
+            </td>
+          
+            <td>
+            1.84%
+            </td>
+          
+            <td>
+            12.24x
+            </td>
+          
+            <td>
+            1.00%
+            </td>
+          
+            <td>
+            <b>12.24x</b>
+            </td>
+          
+            <td>
+            0.99%
+            </td>
+          
+            <td>
+            71.60%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/getivar-module.rb" title="getivar tests the performance of getting instance variable values from modules.">getivar-module</a>
+            </th>
+          
+            <td>
+            279.2
+            </td>
+          
+            <td>
+            0.36%
+            </td>
+          
+            <td>
+            214.7
+            </td>
+          
+            <td>
+            0.99%
+            </td>
+          
+            <td>
+            200.6
+            </td>
+          
+            <td>
+            1.21%
+            </td>
+          
+            <td>
+            82.7
+            </td>
+          
+            <td>
+            0.16%
+            </td>
+          
+            <td>
+            1.30x
+            </td>
+          
+            <td>
+            1.05%
+            </td>
+          
+            <td>
+            1.39x
+            </td>
+          
+            <td>
+            1.27%
+            </td>
+          
+            <td>
+            <b>3.38x</b>
+            </td>
+          
+            <td>
+            0.39%
+            </td>
+          
+            <td>
+            66.71%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/keyword_args.rb" title="keyword_args tests the performance of method calls with keyword arguments.">keyword_args</a>
+            </th>
+          
+            <td>
+            280.9
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            286.4
+            </td>
+          
+            <td>
+            1.88%
+            </td>
+          
+            <td>
+            23.0
+            </td>
+          
+            <td>
+            0.08%
+            </td>
+          
+            <td>
+            23.0
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            0.98x
+            </td>
+          
+            <td>
+            1.90%
+            </td>
+          
+            <td>
+            12.21x
+            </td>
+          
+            <td>
+            0.26%
+            </td>
+          
+            <td>
+            <b>12.21x</b>
+            </td>
+          
+            <td>
+            0.27%
+            </td>
+          
+            <td>
+            96.35%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/loops-times.rb" title="nested loop Integer#times and array access microbenchmark">loops-times</a>
+            </th>
+          
+            <td>
+            1073.2
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            1003.2
+            </td>
+          
+            <td>
+            0.07%
+            </td>
+          
+            <td>
+            265.9
+            </td>
+          
+            <td>
+            0.39%
+            </td>
+          
+            <td>
+            268.3
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            1.07x
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            4.04x
+            </td>
+          
+            <td>
+            0.39%
+            </td>
+          
+            <td>
+            <b>4.00x</b>
+            </td>
+          
+            <td>
+            0.14%
+            </td>
+          
+            <td>
+            100.00%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/object-new.rb" title="instantiate a new object in a loop to test allocation performance">object-new</a>
+            </th>
+          
+            <td>
+            110.2
+            </td>
+          
+            <td>
+            0.17%
+            </td>
+          
+            <td>
+            63.1
+            </td>
+          
+            <td>
+            0.53%
+            </td>
+          
+            <td>
+            84.5
+            </td>
+          
+            <td>
+            0.26%
+            </td>
+          
+            <td>
+            18.3
+            </td>
+          
+            <td>
+            1.80%
+            </td>
+          
+            <td>
+            1.74x
+            </td>
+          
+            <td>
+            0.56%
+            </td>
+          
+            <td>
+            1.30x
+            </td>
+          
+            <td>
+            0.31%
+            </td>
+          
+            <td>
+            <b>6.00x</b>
+            </td>
+          
+            <td>
+            1.81%
+            </td>
+          
+            <td>
+            86.98%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/object-new-initialize.rb" title="instantiate a new object and call initialize in a loop to test allocation and initialization performance">object-new-initialize</a>
+            </th>
+          
+            <td>
+            173.0
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            117.3
+            </td>
+          
+            <td>
+            0.34%
+            </td>
+          
+            <td>
+            94.9
+            </td>
+          
+            <td>
+            0.13%
+            </td>
+          
+            <td>
+            27.4
+            </td>
+          
+            <td>
+            0.79%
+            </td>
+          
+            <td>
+            1.47x
+            </td>
+          
+            <td>
+            0.35%
+            </td>
+          
+            <td>
+            1.82x
+            </td>
+          
+            <td>
+            0.16%
+            </td>
+          
+            <td>
+            <b>6.32x</b>
+            </td>
+          
+            <td>
+            0.79%
+            </td>
+          
+            <td>
+            90.22%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/object-new-no-escape.rb" title="instantiate new objects with ivars in a loop to test allocation and escape analysis performance">object-new-no-escape</a>
+            </th>
+          
+            <td>
+            353.0
+            </td>
+          
+            <td>
+            0.11%
+            </td>
+          
+            <td>
+            217.0
+            </td>
+          
+            <td>
+            0.34%
+            </td>
+          
+            <td>
+            211.1
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            51.7
+            </td>
+          
+            <td>
+            0.84%
+            </td>
+          
+            <td>
+            1.63x
+            </td>
+          
+            <td>
+            0.36%
+            </td>
+          
+            <td>
+            1.67x
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            <b>6.82x</b>
+            </td>
+          
+            <td>
+            0.84%
+            </td>
+          
+            <td>
+            93.05%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/respond_to.rb" title="respond_to tests the performance of the respond_to? method.">respond_to</a>
+            </th>
+          
+            <td>
+            209.0
+            </td>
+          
+            <td>
+            0.12%
+            </td>
+          
+            <td>
+            223.8
+            </td>
+          
+            <td>
+            0.21%
+            </td>
+          
+            <td>
+            7.5
+            </td>
+          
+            <td>
+            1.38%
+            </td>
+          
+            <td>
+            7.5
+            </td>
+          
+            <td>
+            0.87%
+            </td>
+          
+            <td>
+            0.93x
+            </td>
+          
+            <td>
+            0.24%
+            </td>
+          
+            <td>
+            27.81x
+            </td>
+          
+            <td>
+            1.39%
+            </td>
+          
+            <td>
+            <b>27.85x</b>
+            </td>
+          
+            <td>
+            0.87%
+            </td>
+          
+            <td>
+            94.47%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/ruby-xor.rb" title="pure-Ruby string XOR microbenchmark, analogous to xorcist C extension.">ruby-xor</a>
+            </th>
+          
+            <td>
+            119.3
+            </td>
+          
+            <td>
+            0.41%
+            </td>
+          
+            <td>
+            126.8
+            </td>
+          
+            <td>
+            0.43%
+            </td>
+          
+            <td>
+            22.1
+            </td>
+          
+            <td>
+            0.26%
+            </td>
+          
+            <td>
+            22.3
+            </td>
+          
+            <td>
+            0.66%
+            </td>
+          
+            <td>
+            0.94x
+            </td>
+          
+            <td>
+            0.59%
+            </td>
+          
+            <td>
+            5.39x
+            </td>
+          
+            <td>
+            0.49%
+            </td>
+          
+            <td>
+            <b>5.35x</b>
+            </td>
+          
+            <td>
+            0.78%
+            </td>
+          
+            <td>
+            99.99%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/send_bmethod.rb" title="send_bmethod just calls known Ruby bmethods many, many times.">send_bmethod</a>
+            </th>
+          
+            <td>
+            245.6
+            </td>
+          
+            <td>
+            0.35%
+            </td>
+          
+            <td>
+            249.3
+            </td>
+          
+            <td>
+            0.25%
+            </td>
+          
+            <td>
+            5.3
+            </td>
+          
+            <td>
+            0.29%
+            </td>
+          
+            <td>
+            6.5
+            </td>
+          
+            <td>
+            0.29%
+            </td>
+          
+            <td>
+            0.99x
+            </td>
+          
+            <td>
+            0.43%
+            </td>
+          
+            <td>
+            46.27x
+            </td>
+          
+            <td>
+            0.46%
+            </td>
+          
+            <td>
+            <b>37.88x</b>
+            </td>
+          
+            <td>
+            0.45%
+            </td>
+          
+            <td>
+            94.83%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/send_cfunc_block.rb" title="send_cfunc_block just calls a known C function with a block many, many times.">send_cfunc_block</a>
+            </th>
+          
+            <td>
+            271.4
+            </td>
+          
+            <td>
+            0.15%
+            </td>
+          
+            <td>
+            270.1
+            </td>
+          
+            <td>
+            0.16%
+            </td>
+          
+            <td>
+            83.7
+            </td>
+          
+            <td>
+            1.14%
+            </td>
+          
+            <td>
+            77.6
+            </td>
+          
+            <td>
+            0.83%
+            </td>
+          
+            <td>
+            1.00x
+            </td>
+          
+            <td>
+            0.22%
+            </td>
+          
+            <td>
+            3.24x
+            </td>
+          
+            <td>
+            1.15%
+            </td>
+          
+            <td>
+            <b>3.49x</b>
+            </td>
+          
+            <td>
+            0.85%
+            </td>
+          
+            <td>
+            95.19%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/send_rubyfunc_block.rb" title="send_rubyfunc_block just calls a known Ruby function with a block many, many times.">send_rubyfunc_block</a>
+            </th>
+          
+            <td>
+            149.7
+            </td>
+          
+            <td>
+            0.16%
+            </td>
+          
+            <td>
+            144.6
+            </td>
+          
+            <td>
+            0.50%
+            </td>
+          
+            <td>
+            20.9
+            </td>
+          
+            <td>
+            0.09%
+            </td>
+          
+            <td>
+            20.9
+            </td>
+          
+            <td>
+            0.10%
+            </td>
+          
+            <td>
+            1.04x
+            </td>
+          
+            <td>
+            0.53%
+            </td>
+          
+            <td>
+            7.17x
+            </td>
+          
+            <td>
+            0.18%
+            </td>
+          
+            <td>
+            <b>7.17x</b>
+            </td>
+          
+            <td>
+            0.18%
+            </td>
+          
+            <td>
+            94.28%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/setivar.rb" title="setivar tests the performance of setting instance variable values.">setivar</a>
+            </th>
+          
+            <td>
+            82.4
+            </td>
+          
+            <td>
+            0.21%
+            </td>
+          
+            <td>
+            62.0
+            </td>
+          
+            <td>
+            0.67%
+            </td>
+          
+            <td>
+            5.6
+            </td>
+          
+            <td>
+            0.47%
+            </td>
+          
+            <td>
+            5.6
+            </td>
+          
+            <td>
+            0.53%
+            </td>
+          
+            <td>
+            1.33x
+            </td>
+          
+            <td>
+            0.70%
+            </td>
+          
+            <td>
+            14.77x
+            </td>
+          
+            <td>
+            0.51%
+            </td>
+          
+            <td>
+            <b>14.79x</b>
+            </td>
+          
+            <td>
+            0.57%
+            </td>
+          
+            <td>
+            80.01%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/setivar_object.rb" title="setivar_object tests the performance of setting instance variables to an object, to test write barrier speed.">setivar_object</a>
+            </th>
+          
+            <td>
+            86.8
+            </td>
+          
+            <td>
+            3.16%
+            </td>
+          
+            <td>
+            85.7
+            </td>
+          
+            <td>
+            0.76%
+            </td>
+          
+            <td>
+            34.5
+            </td>
+          
+            <td>
+            14.42%
+            </td>
+          
+            <td>
+            40.9
+            </td>
+          
+            <td>
+            1.23%
+            </td>
+          
+            <td>
+            1.01x
+            </td>
+          
+            <td>
+            3.25%
+            </td>
+          
+            <td>
+            2.52x
+            </td>
+          
+            <td>
+            14.76%
+            </td>
+          
+            <td>
+            <b>2.12x</b>
+            </td>
+          
+            <td>
+            3.39%
+            </td>
+          
+            <td>
+            80.72%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/setivar_young.rb" title="setivar_object tests the performance of setting instance variables to an object, to test write barrier speed on young objects.">setivar_young</a>
+            </th>
+          
+            <td>
+            86.7
+            </td>
+          
+            <td>
+            2.33%
+            </td>
+          
+            <td>
+            89.1
+            </td>
+          
+            <td>
+            0.56%
+            </td>
+          
+            <td>
+            32.5
+            </td>
+          
+            <td>
+            9.36%
+            </td>
+          
+            <td>
+            38.7
+            </td>
+          
+            <td>
+            4.29%
+            </td>
+          
+            <td>
+            0.97x
+            </td>
+          
+            <td>
+            2.40%
+            </td>
+          
+            <td>
+            2.67x
+            </td>
+          
+            <td>
+            9.65%
+            </td>
+          
+            <td>
+            <b>2.24x</b>
+            </td>
+          
+            <td>
+            4.88%
+            </td>
+          
+            <td>
+            80.72%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/str_concat.rb" title="str_concat tests the performance of string concatenation in multiple different encodings.">str_concat</a>
+            </th>
+          
+            <td>
+            75.9
+            </td>
+          
+            <td>
+            0.94%
+            </td>
+          
+            <td>
+            77.3
+            </td>
+          
+            <td>
+            1.80%
+            </td>
+          
+            <td>
+            23.9
+            </td>
+          
+            <td>
+            0.37%
+            </td>
+          
+            <td>
+            24.4
+            </td>
+          
+            <td>
+            0.42%
+            </td>
+          
+            <td>
+            0.98x
+            </td>
+          
+            <td>
+            2.03%
+            </td>
+          
+            <td>
+            3.17x
+            </td>
+          
+            <td>
+            1.01%
+            </td>
+          
+            <td>
+            <b>3.11x</b>
+            </td>
+          
+            <td>
+            1.03%
+            </td>
+          
+            <td>
+            99.88%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/structaref.rb" title="structaref tests the performance of getting Struct members">structaref</a>
+            </th>
+          
+            <td>
+            190.3
+            </td>
+          
+            <td>
+            0.69%
+            </td>
+          
+            <td>
+            168.0
+            </td>
+          
+            <td>
+            1.15%
+            </td>
+          
+            <td>
+            13.4
+            </td>
+          
+            <td>
+            0.77%
+            </td>
+          
+            <td>
+            13.4
+            </td>
+          
+            <td>
+            0.77%
+            </td>
+          
+            <td>
+            1.13x
+            </td>
+          
+            <td>
+            1.34%
+            </td>
+          
+            <td>
+            14.16x
+            </td>
+          
+            <td>
+            1.04%
+            </td>
+          
+            <td>
+            <b>14.16x</b>
+            </td>
+          
+            <td>
+            1.04%
+            </td>
+          
+            <td>
+            66.96%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/structaset.rb" title="structaset tests the performance of setting Struct members">structaset</a>
+            </th>
+          
+            <td>
+            148.2
+            </td>
+          
+            <td>
+            1.25%
+            </td>
+          
+            <td>
+            144.9
+            </td>
+          
+            <td>
+            1.18%
+            </td>
+          
+            <td>
+            65.8
+            </td>
+          
+            <td>
+            0.94%
+            </td>
+          
+            <td>
+            52.5
+            </td>
+          
+            <td>
+            0.30%
+            </td>
+          
+            <td>
+            1.02x
+            </td>
+          
+            <td>
+            1.72%
+            </td>
+          
+            <td>
+            2.25x
+            </td>
+          
+            <td>
+            1.56%
+            </td>
+          
+            <td>
+            <b>2.82x</b>
+            </td>
+          
+            <td>
+            1.29%
+            </td>
+          
+            <td>
+            68.01%
+            </td>
+          
+        </tr>
+      
+        <tr style="border: 1px solid black;">
+          
+            <th scope="row">
+            <a href="https://github.com/ruby/ruby-bench/blob/main/benchmarks/throw.rb" title="microbenchmark for the throw instruction and stack unwinding.">throw</a>
+            </th>
+          
+            <td>
+            27.0
+            </td>
+          
+            <td>
+            0.34%
+            </td>
+          
+            <td>
+            21.3
+            </td>
+          
+            <td>
+            1.29%
+            </td>
+          
+            <td>
+            20.1
+            </td>
+          
+            <td>
+            0.50%
+            </td>
+          
+            <td>
+            15.4
+            </td>
+          
+            <td>
+            1.83%
+            </td>
+          
+            <td>
+            1.27x
+            </td>
+          
+            <td>
+            1.33%
+            </td>
+          
+            <td>
+            1.34x
+            </td>
+          
+            <td>
+            0.60%
+            </td>
+          
+            <td>
+            <b>1.75x</b>
+            </td>
+          
+            <td>
+            1.86%
+            </td>
+          
+            <td>
+            99.98%
+            </td>
+          
+        </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+<p>
+	<strong>RSD</strong> is relative standard deviation - the standard deviation divided by the mean, expressed as a percentage. <br/>
+	<strong>% in YJIT</strong> is the percentage of instructions that complete in YJIT rather than exiting to the non-JITted interpreter. YJIT performs better when this is higher.<br/>
+	<strong>Speedup</strong> is relative to interpreted CRuby. So a "speedup" of 1.21x means it ran at 1.21 times the iters/second of CRuby with JIT disabled.
+</p>
+
+<p>
+	You can find our benchmark code <a href="https://github.com/ruby/ruby-bench">in the ruby-bench Github repo</a>. <br/>
+	Our benchmark-runner and reporting code is <a href="https://github.com/Shopify/yjit-metrics">in the yjit-metrics Github repo</a>.
+</p>
+
+<p>
+	Tested Ruby version for development CRuby and YJIT: <tt><strong>ruby 4.1.0dev (2026-04-25T03:59:05Z master 97c070c244) +YJIT +PRISM [x86_64-linux]</strong></tt> <br/>
+
+	Tested Ruby version for stable CRuby and YJIT: <tt><strong>ruby 3.4.7 (2025-10-08 revision 7a5688e2a2) +YJIT +PRISM [x86_64-linux]</strong></tt> <br/>
+
+</p>
