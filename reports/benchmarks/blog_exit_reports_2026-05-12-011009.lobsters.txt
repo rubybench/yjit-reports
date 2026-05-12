@@ -1,0 +1,68 @@
+method call exit reasons: 
+                    megamorphic    8426370 (52.3%)
+                singleton_class    2787923 (17.3%)
+                     forwarding    1910614 (11.8%)
+                cfunc_block_arg     906017 ( 5.6%)
+                 iseq_has_no_kw     472541 ( 2.9%)
+            iseq_block_arg_type     424171 ( 2.6%)
+       iseq_missing_optional_kw     388033 ( 2.4%)
+                  cme_not_found     261360 ( 1.6%)
+          iseq_kw_splat_non_nil     194244 ( 1.2%)
+  iseq_has_rest_and_kw_supplied     171438 ( 1.1%)
+            optimized_block_arg     125748 ( 0.8%)
+               iseq_arity_error      35304 ( 0.2%)
+     iseq_has_rest_and_captured       9990 ( 0.1%)
+             cfunc_toomany_args       3960 ( 0.0%)
+         cfunc_kw_splat_non_nil       2824 ( 0.0%)
+                  zsuper_method       1515 ( 0.0%)
+             iseq_splat_with_kw       1200 ( 0.0%)
+                  iseq_has_post       1021 ( 0.0%)
+
+leave exit reasons: 
+  interp_return   35318305 (100.0%)
+   se_interrupt        796 ( 0.0%)
+
+getinstancevariable exit reasons: 
+  (all relevant counters are zero)
+setinstancevariable exit reasons: 
+  (all relevant counters are zero)
+opt_aref exit reasons: 
+  (all relevant counters are zero)
+
+bindings_allocations:           0
+bindings_set:                   0
+compiled_iseq_count:         3125
+compiled_block_count:       63563
+invalidation_count:           124
+constant_state_bumps:           0
+inline_code_size:         8573315
+outlined_code_size:       7118668
+
+total_exit_count:        35544415
+total_insns_count:     3062207452
+vm_insns_count:          14770641
+yjit_insns_count:      3047662921
+ratio_in_yjit:              99.5%
+avg_len_in_yjit:             85.7
+
+Top-20 most frequent exit ops (100.0% of exits):
+                    opt_eq:     134304 (59.4)
+                   opt_neq:      52536 (23.2)
+                   splatkw:       9479 (4.2)
+          from_branch_stub:       7131 (3.2)
+        getblockparamproxy:       6782 (3.0)
+             setblockparam:       6781 (3.0)
+               invokesuper:       6170 (2.7)
+               expandarray:        840 (0.4)
+                     leave:        796 (0.4)
+    opt_send_without_block:        764 (0.3)
+                      send:        408 (0.2)
+                   opt_new:         59 (0.0)
+                  branchif:         34 (0.0)
+                   opt_and:         10 (0.0)
+                  opt_plus:          7 (0.0)
+                  opt_aref:          6 (0.0)
+              branchunless:          1 (0.0)
+                opt_length:          1 (0.0)
+                 opt_minus:          1 (0.0)
+               adjuststack:          0 (0.0)
