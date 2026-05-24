@@ -1,0 +1,65 @@
+method call exit reasons: 
+                    megamorphic   19313793 (94.3%)
+                  iseq_has_post     295072 ( 1.4%)
+            iseq_block_arg_type     212803 ( 1.0%)
+                singleton_class     183340 ( 0.9%)
+                     forwarding     146204 ( 0.7%)
+                 iseq_has_no_kw     121806 ( 0.6%)
+             args_splat_bmethod      73243 ( 0.4%)
+          iseq_kw_splat_non_nil      64328 ( 0.3%)
+       iseq_missing_optional_kw      46124 ( 0.2%)
+                cfunc_block_arg      22341 ( 0.1%)
+               iseq_arity_error       5434 ( 0.0%)
+                  zsuper_method       3327 ( 0.0%)
+         cfunc_kw_splat_non_nil       1399 ( 0.0%)
+               send_attr_reader        699 ( 0.0%)
+  iseq_has_rest_and_kw_supplied         14 ( 0.0%)
+
+leave exit reasons: 
+  interp_return   24938835 (100.0%)
+   se_interrupt          2 ( 0.0%)
+
+getinstancevariable exit reasons: 
+  (all relevant counters are zero)
+setinstancevariable exit reasons: 
+  (all relevant counters are zero)
+opt_aref exit reasons: 
+  (all relevant counters are zero)
+
+bindings_allocations:           6
+bindings_set:                   0
+compiled_iseq_count:         3002
+compiled_block_count:       57337
+invalidation_count:           128
+constant_state_bumps:           0
+inline_code_size:         5802117
+outlined_code_size:       4978590
+
+total_exit_count:        25303319
+total_insns_count:     1871400376
+vm_insns_count:           8107684
+yjit_insns_count:      1863657176
+ratio_in_yjit:              99.6%
+avg_len_in_yjit:             73.6
+
+Top-20 most frequent exit ops (100.0% of exits):
+                      opt_new:     340251 (93.4)
+                         once:      11332 (3.1)
+                  expandarray:      10256 (2.8)
+                       opt_eq:       2269 (0.6)
+             from_branch_stub:        307 (0.1)
+           getblockparamproxy:         67 (0.0)
+                        leave:          2 (0.0)
+                  adjuststack:          0 (0.0)
+                  anytostring:          0 (0.0)
+                     branchif:          0 (0.0)
+        branchif_without_ints:          0 (0.0)
+                    branchnil:          0 (0.0)
+       branchnil_without_ints:          0 (0.0)
+                 branchunless:          0 (0.0)
+    branchunless_without_ints:          0 (0.0)
+                 checkkeyword:          0 (0.0)
+                   checkmatch:          0 (0.0)
+                    checktype:          0 (0.0)
+                  concatarray:          0 (0.0)
+                concatstrings:          0 (0.0)
