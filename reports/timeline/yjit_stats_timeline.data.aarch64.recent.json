@@ -6,15 +6,6 @@
       "platform": "aarch64",
       "data": [
         {
-          "time": "2026-03-01 00:58:27",
-          "ruby_desc": "19b636d3ec",
-          "yjit_speedup": 3.757857146181706,
-          "compile_time_ms": 141.5589677352941,
-          "ratio_in_yjit": 95.00026940610195,
-          "side_exits": 65414.98529411765,
-          "invalidation_count": 11.558823529411764
-        },
-        {
           "time": "2026-03-02 00:52:23",
           "ruby_desc": "d68e4be187",
           "yjit_speedup": 3.7658966323180993,
@@ -904,6 +895,15 @@
           "ratio_in_yjit": 95.04189511944308,
           "side_exits": 64080.166666666664,
           "invalidation_count": 10.902777777777779
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "ruby_desc": "e70011179e",
+          "yjit_speedup": 3.5932450415303614,
+          "compile_time_ms": 126.87849975,
+          "ratio_in_yjit": 95.042482335273,
+          "side_exits": 64082.25,
+          "invalidation_count": 10.86111111111111
         }
       ],
       "color": "#00cc00"
@@ -913,15 +913,6 @@
       "benchmark": "overall-geomean",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "ruby_desc": "19b636d3ec",
-          "yjit_speedup": 2.5729041985785095,
-          "compile_time_ms": 14.432354556105453,
-          "ratio_in_yjit": 93.92865123670774,
-          "side_exits": 0.0,
-          "invalidation_count": 0.0
-        },
         {
           "time": "2026-03-02 00:52:23",
           "ruby_desc": "d68e4be187",
@@ -1812,6 +1803,15 @@
           "ratio_in_yjit": 93.90984792501196,
           "side_exits": 0.0,
           "invalidation_count": 0.0
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "ruby_desc": "e70011179e",
+          "yjit_speedup": 2.6156963347867035,
+          "compile_time_ms": 12.569784895892974,
+          "ratio_in_yjit": 93.91031406866007,
+          "side_exits": 0.0,
+          "invalidation_count": 0.0
         }
       ],
       "color": "#0066b3"
@@ -1821,15 +1821,6 @@
       "benchmark": "30k_ifelse",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 4.705207831885255,
-          "compile_time_ms": 1801.119952,
-          "ratio_in_yjit": 99.95185882569172,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 4.559231884418504,
@@ -2720,6 +2711,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 4.590322707114934,
+          "compile_time_ms": 1698.741667,
+          "ratio_in_yjit": 99.95165703208066,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ff8000"
@@ -2729,15 +2729,6 @@
       "benchmark": "30k_methods",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 5.8042562789067595,
-          "compile_time_ms": 481.851406,
-          "ratio_in_yjit": 99.96077877214861,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 5.9426008257538845,
@@ -3628,6 +3619,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 5.9305748094524375,
+          "compile_time_ms": 458.522474,
+          "ratio_in_yjit": 99.96041921032756,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ffcc00"
@@ -3637,15 +3637,6 @@
       "benchmark": "activerecord",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.141507768287095,
-          "compile_time_ms": 66.472252,
-          "ratio_in_yjit": 99.9449653356085,
-          "side_exits": 10,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.1494727150345474,
@@ -4536,6 +4527,15 @@
           "side_exits": 13,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.2579514162094823,
+          "compile_time_ms": 64.879963,
+          "ratio_in_yjit": 99.94561127726554,
+          "side_exits": 10,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#330099"
@@ -4545,15 +4545,6 @@
       "benchmark": "addressable-equality",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.500227015456698,
-          "compile_time_ms": 30.562337,
-          "ratio_in_yjit": 99.92105592311128,
-          "side_exits": 1,
-          "invalidation_count": 1,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.508168013175048,
@@ -5444,6 +5435,15 @@
           "side_exits": 0,
           "invalidation_count": 1,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.576717071784815,
+          "compile_time_ms": 28.872641,
+          "ratio_in_yjit": 99.92099421403557,
+          "side_exits": 0,
+          "invalidation_count": 1,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#990099"
@@ -5453,15 +5453,6 @@
       "benchmark": "addressable-getters",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.4280107883749817,
-          "compile_time_ms": 18.587918,
-          "ratio_in_yjit": 99.851818904621,
-          "side_exits": 1,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.4380554118907118,
@@ -6352,6 +6343,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.4836451541375655,
+          "compile_time_ms": 18.024215,
+          "ratio_in_yjit": 99.85639303019528,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ccff00"
@@ -6361,15 +6361,6 @@
       "benchmark": "addressable-join",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.4172437673040157,
-          "compile_time_ms": 20.639594,
-          "ratio_in_yjit": 99.85039580381843,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.4192331957233026,
@@ -7260,6 +7251,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.4514482928243757,
+          "compile_time_ms": 19.88146,
+          "ratio_in_yjit": 99.85399062455977,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ff0000"
@@ -7269,15 +7269,6 @@
       "benchmark": "addressable-merge",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.629116800991827,
-          "compile_time_ms": 19.713911,
-          "ratio_in_yjit": 99.87097036709748,
-          "side_exits": 1,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.6219612740470224,
@@ -8168,6 +8159,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.7201785460553027,
+          "compile_time_ms": 19.654375,
+          "ratio_in_yjit": 99.87630419093018,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#808080"
@@ -8177,15 +8177,6 @@
       "benchmark": "addressable-new",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.5780878206126507,
-          "compile_time_ms": 12.623852,
-          "ratio_in_yjit": 99.86720210620172,
-          "side_exits": 1,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.5474893672687853,
@@ -9076,6 +9067,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.6754615704396059,
+          "compile_time_ms": 11.869389,
+          "ratio_in_yjit": 99.87142220196783,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#008f00"
@@ -9085,15 +9085,6 @@
       "benchmark": "addressable-normalize",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.493237154046991,
-          "compile_time_ms": 28.989738,
-          "ratio_in_yjit": 99.85616946780664,
-          "side_exits": 1,
-          "invalidation_count": 1,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.5082017428047059,
@@ -9984,6 +9975,15 @@
           "side_exits": 0,
           "invalidation_count": 1,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.5803705510579011,
+          "compile_time_ms": 28.289678,
+          "ratio_in_yjit": 99.86082148165552,
+          "side_exits": 0,
+          "invalidation_count": 1,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#00487d"
@@ -9993,15 +9993,6 @@
       "benchmark": "addressable-parse",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.462196688618851,
-          "compile_time_ms": 19.386272,
-          "ratio_in_yjit": 99.85326279625892,
-          "side_exits": 1,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.4493605868445447,
@@ -10892,6 +10883,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.541877502282486,
+          "compile_time_ms": 18.732774,
+          "ratio_in_yjit": 99.85928618447998,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#b35a00"
@@ -10901,15 +10901,6 @@
       "benchmark": "addressable-setters",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.518199120821844,
-          "compile_time_ms": 12.921081,
-          "ratio_in_yjit": 99.85666861980269,
-          "side_exits": 1,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.5414162249842287,
@@ -11800,6 +11791,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.5935355443164585,
+          "compile_time_ms": 12.302024,
+          "ratio_in_yjit": 99.86229801282605,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#b38f00"
@@ -11809,15 +11809,6 @@
       "benchmark": "addressable-to-s",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.4477436348988584,
-          "compile_time_ms": 18.384684,
-          "ratio_in_yjit": 99.85039484046098,
-          "side_exits": 1,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.387113620599109,
@@ -12708,6 +12699,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.482992752409804,
+          "compile_time_ms": 17.597823,
+          "ratio_in_yjit": 99.85499979431096,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#6b006b"
@@ -12717,15 +12717,6 @@
       "benchmark": "attr_accessor",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 9.798144431155576,
-          "compile_time_ms": 1.831056,
-          "ratio_in_yjit": 70.90687377212993,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 9.795607558627504,
@@ -13616,6 +13607,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 10.156466691317961,
+          "compile_time_ms": 1.782708,
+          "ratio_in_yjit": 70.90677127908653,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#8fb300"
@@ -13625,15 +13625,6 @@
       "benchmark": "binarytrees",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.381897814501901,
-          "compile_time_ms": 2.476238,
-          "ratio_in_yjit": 99.99561521913951,
-          "side_exits": 1,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.406178972864763,
@@ -14524,6 +14515,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.3763133216887415,
+          "compile_time_ms": 2.392393,
+          "ratio_in_yjit": 99.99545920769889,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#b30000"
@@ -14533,15 +14533,6 @@
       "benchmark": "blurhash",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.033319832383835,
-          "compile_time_ms": 15.520856,
-          "ratio_in_yjit": 99.99453088071213,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.035134677979076,
@@ -15432,6 +15423,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.0200649570463987,
+          "compile_time_ms": 15.012957,
+          "ratio_in_yjit": 99.99438114399572,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#bebebe"
@@ -15441,15 +15441,6 @@
       "benchmark": "cfunc_itself",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.1671487383075063,
-          "compile_time_ms": 1.346839,
-          "ratio_in_yjit": 95.46172489532495,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.166759522284238,
@@ -16340,6 +16331,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.124039336916737,
+          "compile_time_ms": 1.311295,
+          "ratio_in_yjit": 95.50014208907953,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#80ff80"
@@ -16349,15 +16349,6 @@
       "benchmark": "chunky-png",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.269550575696609,
-          "compile_time_ms": 33.362046,
-          "ratio_in_yjit": 99.99734914047897,
-          "side_exits": 1,
-          "invalidation_count": 1,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.247161042859635,
@@ -17248,6 +17239,15 @@
           "side_exits": 0,
           "invalidation_count": 1,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.310739287096976,
+          "compile_time_ms": 32.507742,
+          "ratio_in_yjit": 99.99734921314331,
+          "side_exits": 0,
+          "invalidation_count": 1,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#80c9ff"
@@ -18166,15 +18166,6 @@
       "platform": "aarch64",
       "data": [
         {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.292668114452701,
-          "compile_time_ms": 3.432354,
-          "ratio_in_yjit": 99.98526999104527,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
-        {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.3708475046831272,
           "compile_time_ms": 3.444913,
@@ -19064,6 +19055,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.3827054332126225,
+          "compile_time_ms": 3.420771,
+          "ratio_in_yjit": 99.98554303590228,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#aa80ff"
@@ -19073,15 +19073,6 @@
       "benchmark": "erubi-rails",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.5471685360215202,
-          "compile_time_ms": 85.900339,
-          "ratio_in_yjit": 99.61315808949138,
-          "side_exits": 599980,
-          "invalidation_count": 22,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.609561001427829,
@@ -19972,6 +19963,15 @@
           "side_exits": 599971,
           "invalidation_count": 23,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.6074072574073037,
+          "compile_time_ms": 81.602105,
+          "ratio_in_yjit": 99.6132109661225,
+          "side_exits": 599971,
+          "invalidation_count": 23,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ee00cc"
@@ -20890,15 +20890,6 @@
       "platform": "aarch64",
       "data": [
         {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.1301954683847046,
-          "compile_time_ms": 2.965902,
-          "ratio_in_yjit": 99.98398269743642,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
-        {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.1266307180226804,
           "compile_time_ms": 2.979862,
@@ -21788,6 +21779,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.1628533675411616,
+          "compile_time_ms": 3.034705,
+          "ratio_in_yjit": 99.98424754581934,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#666600"
@@ -21797,15 +21797,6 @@
       "benchmark": "fannkuchredux",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.9462033640297025,
-          "compile_time_ms": 9.368934,
-          "ratio_in_yjit": 61.84664313246147,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.8509108321020893,
@@ -22696,6 +22687,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.878161657882213,
+          "compile_time_ms": 9.054177,
+          "ratio_in_yjit": 61.846602698218035,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ffbfff"
@@ -22705,15 +22705,6 @@
       "benchmark": "fib",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 6.4635938143869165,
-          "compile_time_ms": 0.91945,
-          "ratio_in_yjit": 99.99621071060608,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 6.434976509998821,
@@ -23604,6 +23595,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 6.573524561341113,
+          "compile_time_ms": 0.897269,
+          "ratio_in_yjit": 99.9960744367407,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#00ffcc"
@@ -23613,15 +23613,6 @@
       "benchmark": "fluentd",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.2552763171504535,
-          "compile_time_ms": 3.254192,
-          "ratio_in_yjit": 99.97285112175649,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.242531363668149,
@@ -24512,6 +24503,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.393567520842151,
+          "compile_time_ms": 3.325694,
+          "ratio_in_yjit": 99.96984670655019,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#cc6699"
@@ -25366,6 +25366,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.7376629551771905,
+          "compile_time_ms": 3.109038,
+          "ratio_in_yjit": 99.98922827776069,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#999900"
@@ -25375,15 +25384,6 @@
       "benchmark": "getivar",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 8.032728148754114,
-          "compile_time_ms": 1.667349,
-          "ratio_in_yjit": 77.40700983624582,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 8.045923989241567,
@@ -26274,6 +26274,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 8.074772985940431,
+          "compile_time_ms": 1.624696,
+          "ratio_in_yjit": 77.40690484724725,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#003399"
@@ -26283,15 +26292,6 @@
       "benchmark": "getivar-module",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.592323230236313,
-          "compile_time_ms": 2.897282,
-          "ratio_in_yjit": 66.71264141710527,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.596537893228434,
@@ -27182,6 +27182,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.899119516446648,
+          "compile_time_ms": 2.837235,
+          "ratio_in_yjit": 66.71257430760575,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#00cc00"
@@ -27191,15 +27200,6 @@
       "benchmark": "graphql",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.179363501252131,
-          "compile_time_ms": 47.172522,
-          "ratio_in_yjit": 99.98621100236528,
-          "side_exits": 2,
-          "invalidation_count": 19,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.213334953913633,
@@ -28090,6 +28090,15 @@
           "side_exits": 0,
           "invalidation_count": 19,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.2264727579015364,
+          "compile_time_ms": 45.606893,
+          "ratio_in_yjit": 99.98651979155493,
+          "side_exits": 0,
+          "invalidation_count": 19,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#0066b3"
@@ -28099,15 +28108,6 @@
       "benchmark": "graphql-native",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.2125885446595102,
-          "compile_time_ms": 12.357443,
-          "ratio_in_yjit": 99.97974427884209,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.2471626622156644,
@@ -28998,6 +28998,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.2424445230168644,
+          "compile_time_ms": 12.00612,
+          "ratio_in_yjit": 99.97953441869113,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ff8000"
@@ -29024,15 +29033,6 @@
       "benchmark": "hexapdf",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.6786826663762426,
-          "compile_time_ms": 397.452474,
-          "ratio_in_yjit": 97.5981373221661,
-          "side_exits": 396932,
-          "invalidation_count": 44,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.6995980469552894,
@@ -29923,6 +29923,15 @@
           "side_exits": 396851,
           "invalidation_count": 44,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.766780386118831,
+          "compile_time_ms": 385.311026,
+          "ratio_in_yjit": 99.75951497378576,
+          "side_exits": 396851,
+          "invalidation_count": 44,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#330099"
@@ -29932,15 +29941,6 @@
       "benchmark": "keyword_args",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 7.6764669304016335,
-          "compile_time_ms": 1.60522,
-          "ratio_in_yjit": 96.46867551390638,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 7.662926861854888,
@@ -30831,6 +30831,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 7.619160928274657,
+          "compile_time_ms": 1.573631,
+          "ratio_in_yjit": 96.40955250173926,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ff0000"
@@ -30840,15 +30849,6 @@
       "benchmark": "knucleotide",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.003797669587658,
-          "compile_time_ms": 4.296042,
-          "ratio_in_yjit": 32.2260385727955,
-          "side_exits": 3,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.001495013784029,
@@ -31739,6 +31739,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 0.9800900998992657,
+          "compile_time_ms": 4.187903,
+          "ratio_in_yjit": 28.231088239228757,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#808080"
@@ -31765,15 +31774,6 @@
       "benchmark": "lee",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.4308948527722702,
-          "compile_time_ms": 27.193672,
-          "ratio_in_yjit": 99.9707382831279,
-          "side_exits": 174874,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.4188613695015229,
@@ -32664,6 +32664,15 @@
           "side_exits": 174811,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.830622554227691,
+          "compile_time_ms": 26.241003,
+          "ratio_in_yjit": 99.96920098185109,
+          "side_exits": 174811,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#00487d"
@@ -32673,15 +32682,6 @@
       "benchmark": "liquid-c",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.3322660795495194,
-          "compile_time_ms": 51.920499,
-          "ratio_in_yjit": 99.79535894581275,
-          "side_exits": 43840,
-          "invalidation_count": 5,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.309268504662102,
@@ -33572,6 +33572,15 @@
           "side_exits": 44640,
           "invalidation_count": 5,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.339758036912616,
+          "compile_time_ms": 49.93842,
+          "ratio_in_yjit": 99.79542557338782,
+          "side_exits": 44320,
+          "invalidation_count": 5,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#b35a00"
@@ -33581,15 +33590,6 @@
       "benchmark": "liquid-compile",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.3184542316526093,
-          "compile_time_ms": 68.261788,
-          "ratio_in_yjit": 99.95514883567066,
-          "side_exits": 24367,
-          "invalidation_count": 2,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.3328988597810054,
@@ -34480,6 +34480,15 @@
           "side_exits": 25823,
           "invalidation_count": 2,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.3816176158038806,
+          "compile_time_ms": 63.559265,
+          "ratio_in_yjit": 99.96189960774561,
+          "side_exits": 25731,
+          "invalidation_count": 2,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#b38f00"
@@ -34489,15 +34498,6 @@
       "benchmark": "liquid-render",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.3048302580177262,
-          "compile_time_ms": 68.972148,
-          "ratio_in_yjit": 99.90881525588013,
-          "side_exits": 11760,
-          "invalidation_count": 8,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.2773992162789556,
@@ -35388,6 +35388,15 @@
           "side_exits": 11760,
           "invalidation_count": 8,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.4008704779852192,
+          "compile_time_ms": 67.300623,
+          "ratio_in_yjit": 99.90866133296707,
+          "side_exits": 11760,
+          "invalidation_count": 8,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#6b006b"
@@ -35397,15 +35406,6 @@
       "benchmark": "lobsters",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-02-27 00:52:08",
-          "yjit_speedup": 1.4299689071840582,
-          "compile_time_ms": 1892.932564,
-          "ratio_in_yjit": 99.4974784828088,
-          "side_exits": 235867,
-          "invalidation_count": 120,
-          "ruby_desc": "9ed1517cb9"
-        },
         {
           "time": "2026-02-28 00:46:18",
           "yjit_speedup": 1.4479728051325007,
@@ -36296,6 +36296,15 @@
           "side_exits": 225643,
           "invalidation_count": 124,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.4402988823007743,
+          "compile_time_ms": 1779.182544,
+          "ratio_in_yjit": 99.51079488981973,
+          "side_exits": 223459,
+          "invalidation_count": 122,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#8fb300"
@@ -36305,15 +36314,6 @@
       "benchmark": "loops-times",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.168743458839304,
-          "compile_time_ms": 2.476103,
-          "ratio_in_yjit": 99.99560201573749,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.1489544637745417,
@@ -37204,6 +37204,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.218982755130473,
+          "compile_time_ms": 2.39856,
+          "ratio_in_yjit": 99.99557564403109,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#b30000"
@@ -37213,15 +37222,6 @@
       "benchmark": "mail",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.4212736653965794,
-          "compile_time_ms": 187.469461,
-          "ratio_in_yjit": 99.88355998553666,
-          "side_exits": 86898,
-          "invalidation_count": 40,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.48095138143319,
@@ -38112,6 +38112,15 @@
           "side_exits": 90747,
           "invalidation_count": 40,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.501368047715109,
+          "compile_time_ms": 179.773784,
+          "ratio_in_yjit": 99.88435876133228,
+          "side_exits": 90197,
+          "invalidation_count": 40,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#bebebe"
@@ -38121,15 +38130,6 @@
       "benchmark": "matmul",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.419613203994765,
-          "compile_time_ms": 3.717398,
-          "ratio_in_yjit": 99.81997322833298,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.413596466252051,
@@ -39020,6 +39020,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.5102972908710837,
+          "compile_time_ms": 3.458572,
+          "ratio_in_yjit": 99.81990956025332,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#80ff80"
@@ -39029,15 +39038,6 @@
       "benchmark": "nbody",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.7111135542566822,
-          "compile_time_ms": 5.340188,
-          "ratio_in_yjit": 99.8242450948776,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.7136208423910873,
@@ -39928,6 +39928,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.726609767799379,
+          "compile_time_ms": 5.181544,
+          "ratio_in_yjit": 99.82638144577398,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#80c9ff"
@@ -39937,15 +39946,6 @@
       "benchmark": "nqueens",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.7185052110828942,
-          "compile_time_ms": 8.919121,
-          "ratio_in_yjit": 96.9978303295717,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.712798613342091,
@@ -40836,6 +40836,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.734315400091965,
+          "compile_time_ms": 8.574695,
+          "ratio_in_yjit": 96.9977125679892,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ffc080"
@@ -40845,15 +40854,6 @@
       "benchmark": "object-new",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.546055889923117,
-          "compile_time_ms": 0.879833,
-          "ratio_in_yjit": 89.12853652281547,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.540291912673928,
@@ -41744,6 +41744,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.9962156011958947,
+          "compile_time_ms": 0.858026,
+          "ratio_in_yjit": 89.5067783488824,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ffe680"
@@ -42598,6 +42607,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.8433950887893724,
+          "compile_time_ms": 1.113132,
+          "ratio_in_yjit": 92.69006914840556,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#aa80ff"
@@ -43452,6 +43470,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.8473824007505644,
+          "compile_time_ms": 1.474008,
+          "ratio_in_yjit": 93.05277816671459,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ee00cc"
@@ -43461,15 +43488,6 @@
       "benchmark": "optcarrot",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.91536138358523,
-          "compile_time_ms": 93.003292,
-          "ratio_in_yjit": 99.48930103527623,
-          "side_exits": 0,
-          "invalidation_count": 34,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.90308381110987,
@@ -44360,6 +44378,15 @@
           "side_exits": 0,
           "invalidation_count": 34,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.889247672796442,
+          "compile_time_ms": 90.501082,
+          "ratio_in_yjit": 99.48929464746374,
+          "side_exits": 0,
+          "invalidation_count": 34,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ff8080"
@@ -44369,15 +44396,6 @@
       "benchmark": "protoboeuf",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.8185078095039655,
-          "compile_time_ms": 64.110035,
-          "ratio_in_yjit": 99.99104443528246,
-          "side_exits": 1,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.8207324886961747,
@@ -45268,6 +45286,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.844730805221944,
+          "compile_time_ms": 61.21137,
+          "ratio_in_yjit": 99.99087514950213,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#666600"
@@ -45277,15 +45304,6 @@
       "benchmark": "protoboeuf-encode",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.489082786828542,
-          "compile_time_ms": 39.866065,
-          "ratio_in_yjit": 99.98898727288886,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.3932440684347633,
@@ -46176,6 +46194,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.379258102866088,
+          "compile_time_ms": 37.693267,
+          "ratio_in_yjit": 99.98878660362688,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ffbfff"
@@ -46185,15 +46212,6 @@
       "benchmark": "psych-load",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.7036113207528782,
-          "compile_time_ms": 21.056173,
-          "ratio_in_yjit": 99.99779158642994,
-          "side_exits": 2,
-          "invalidation_count": 2,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.7153635056000212,
@@ -47084,6 +47102,15 @@
           "side_exits": 0,
           "invalidation_count": 2,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.6969880072869101,
+          "compile_time_ms": 20.331139,
+          "ratio_in_yjit": 99.99778857953186,
+          "side_exits": 0,
+          "invalidation_count": 2,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#00ffcc"
@@ -47093,15 +47120,6 @@
       "benchmark": "rack",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.6113501466690676,
-          "compile_time_ms": 12.978476,
-          "ratio_in_yjit": 99.88938201052048,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.563499059243913,
@@ -47992,6 +48010,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.7432112475028112,
+          "compile_time_ms": 12.334528,
+          "ratio_in_yjit": 99.89393186412644,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#cc6699"
@@ -48001,15 +48028,6 @@
       "benchmark": "railsbench",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-02-27 00:52:08",
-          "yjit_speedup": 1.7836577466136652,
-          "compile_time_ms": 480.781164,
-          "ratio_in_yjit": 99.70150502578568,
-          "side_exits": 796162,
-          "invalidation_count": 97,
-          "ruby_desc": "9ed1517cb9"
-        },
         {
           "time": "2026-02-28 00:46:18",
           "yjit_speedup": 1.7684272505397625,
@@ -48900,6 +48918,15 @@
           "side_exits": 778949,
           "invalidation_count": 105,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.8699522090216703,
+          "compile_time_ms": 457.849781,
+          "ratio_in_yjit": 99.71447651474503,
+          "side_exits": 778949,
+          "invalidation_count": 105,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#999900"
@@ -48909,15 +48936,6 @@
       "benchmark": "respond_to",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 20.784290615511043,
-          "compile_time_ms": 1.890154,
-          "ratio_in_yjit": 95.74741948906086,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 21.069678793287782,
@@ -49808,6 +49826,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 21.79864755732991,
+          "compile_time_ms": 1.874043,
+          "ratio_in_yjit": 95.79337359067767,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#003399"
@@ -49817,15 +49844,6 @@
       "benchmark": "rubocop",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.5750598755259295,
-          "compile_time_ms": 1470.241765,
-          "ratio_in_yjit": 99.61905238795933,
-          "side_exits": 458371,
-          "invalidation_count": 124,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.5777338519464739,
@@ -50716,6 +50734,15 @@
           "side_exits": 454136,
           "invalidation_count": 131,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.6198280531215894,
+          "compile_time_ms": 1420.783201,
+          "ratio_in_yjit": 99.61380795837472,
+          "side_exits": 454136,
+          "invalidation_count": 130,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#00cc00"
@@ -50725,15 +50752,6 @@
       "benchmark": "ruby-json",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.249652477452941,
-          "compile_time_ms": 5.206812,
-          "ratio_in_yjit": 99.98285570560226,
-          "side_exits": 2,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.2622437452556547,
@@ -51624,6 +51642,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.306830857377448,
+          "compile_time_ms": 5.034941,
+          "ratio_in_yjit": 99.98412244409336,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#0066b3"
@@ -51633,15 +51660,6 @@
       "benchmark": "ruby-lsp",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.4237207139406616,
-          "compile_time_ms": 181.284963,
-          "ratio_in_yjit": 99.68569965073515,
-          "side_exits": 425488,
-          "invalidation_count": 47,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.3931346648903755,
@@ -52532,6 +52550,15 @@
           "side_exits": 418940,
           "invalidation_count": 47,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.46046107820263,
+          "compile_time_ms": 173.735249,
+          "ratio_in_yjit": 99.68647523434768,
+          "side_exits": 422213,
+          "invalidation_count": 47,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ff8000"
@@ -52541,15 +52568,6 @@
       "benchmark": "ruby-xor",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 5.817081772423545,
-          "compile_time_ms": 2.425762,
-          "ratio_in_yjit": 99.99216040191908,
-          "side_exits": 2,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 5.777884842917872,
@@ -53440,6 +53458,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 5.771269352573564,
+          "compile_time_ms": 2.343661,
+          "ratio_in_yjit": 99.99200557246931,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ffcc00"
@@ -53449,15 +53476,6 @@
       "benchmark": "rubyboy",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.8807590828012657,
-          "compile_time_ms": 147.267134,
-          "ratio_in_yjit": 99.99872926140132,
-          "side_exits": 56,
-          "invalidation_count": 42,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.844685868587503,
@@ -54348,6 +54366,15 @@
           "side_exits": 0,
           "invalidation_count": 42,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.8920841737887226,
+          "compile_time_ms": 141.735925,
+          "ratio_in_yjit": 99.9990311169734,
+          "side_exits": 0,
+          "invalidation_count": 42,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#330099"
@@ -54357,15 +54384,6 @@
       "benchmark": "rubykon",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.942422554509084,
-          "compile_time_ms": 50.196594,
-          "ratio_in_yjit": 99.9575264241657,
-          "side_exits": 445005,
-          "invalidation_count": 4,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.9592227064871142,
@@ -55256,6 +55274,15 @@
           "side_exits": 445003,
           "invalidation_count": 4,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.9995618516765796,
+          "compile_time_ms": 46.921458,
+          "ratio_in_yjit": 99.95746960824754,
+          "side_exits": 445003,
+          "invalidation_count": 4,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#990099"
@@ -55265,15 +55292,6 @@
       "benchmark": "send_bmethod",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 28.897433073543322,
-          "compile_time_ms": 1.621563,
-          "ratio_in_yjit": 95.58253087533772,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 29.132699703390305,
@@ -56164,6 +56182,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 28.911635824746316,
+          "compile_time_ms": 1.578998,
+          "ratio_in_yjit": 95.58228788835456,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ccff00"
@@ -56173,15 +56200,6 @@
       "benchmark": "send_cfunc_block",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.494969534379336,
-          "compile_time_ms": 3.402066,
-          "ratio_in_yjit": 98.098458517719,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.484464129276335,
@@ -57072,6 +57090,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.7364497333453,
+          "compile_time_ms": 2.067827,
+          "ratio_in_yjit": 95.18704309306894,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ff0000"
@@ -57081,15 +57108,6 @@
       "benchmark": "send_rubyfunc_block",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 21.449354423411844,
-          "compile_time_ms": 1.250594,
-          "ratio_in_yjit": 95.5561370993862,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 21.58974299453328,
@@ -57980,6 +57998,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 7.557280927625487,
+          "compile_time_ms": 1.502048,
+          "ratio_in_yjit": 96.08746886440971,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#808080"
@@ -57989,15 +58016,6 @@
       "benchmark": "sequel",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.2393680439700283,
-          "compile_time_ms": 3.605052,
-          "ratio_in_yjit": 99.37877986689512,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.2264318786264494,
@@ -58888,6 +58906,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.24604456660827,
+          "compile_time_ms": 3.8866,
+          "ratio_in_yjit": 99.42190012000881,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#008f00"
@@ -58897,15 +58924,6 @@
       "benchmark": "setivar",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 9.593623893384468,
-          "compile_time_ms": 1.075898,
-          "ratio_in_yjit": 84.99262714943875,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 9.584374050941879,
@@ -59796,6 +59814,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 9.525911821385257,
+          "compile_time_ms": 1.038436,
+          "ratio_in_yjit": 84.99249589739183,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#00487d"
@@ -59805,15 +59832,6 @@
       "benchmark": "setivar_object",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.404348365356396,
-          "compile_time_ms": 1.212532,
-          "ratio_in_yjit": 83.63169025012662,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.422946314496446,
@@ -60704,6 +60722,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.1170089447019578,
+          "compile_time_ms": 1.191009,
+          "ratio_in_yjit": 83.9548919158829,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#b35a00"
@@ -60713,15 +60740,6 @@
       "benchmark": "setivar_young",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.407353228046254,
-          "compile_time_ms": 1.498263,
-          "ratio_in_yjit": 83.63168914800544,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.415624930190543,
@@ -61612,6 +61630,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.133535485500524,
+          "compile_time_ms": 1.453145,
+          "ratio_in_yjit": 83.95489083143543,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#b38f00"
@@ -61692,15 +61719,6 @@
       "benchmark": "shipit",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.793333415711286,
-          "compile_time_ms": 1537.352609,
-          "ratio_in_yjit": 99.70084676564029,
-          "side_exits": 753072,
-          "invalidation_count": 168,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.8327851805083328,
@@ -62591,6 +62609,15 @@
           "side_exits": 946485,
           "invalidation_count": 147,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.7747245511850516,
+          "compile_time_ms": 1398.387894,
+          "ratio_in_yjit": 99.66115592800415,
+          "side_exits": 946511,
+          "invalidation_count": 147,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#8fb300"
@@ -63445,6 +63472,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.4894477464930447,
+          "compile_time_ms": 4.769104,
+          "ratio_in_yjit": 99.98706538326859,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#b30000"
@@ -63454,15 +63490,6 @@
       "benchmark": "str_concat",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.1040307475713185,
-          "compile_time_ms": 2.156447,
-          "ratio_in_yjit": 99.90722871255282,
-          "side_exits": 1,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.07746143972093,
@@ -64353,6 +64380,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.068250311228296,
+          "compile_time_ms": 2.086203,
+          "ratio_in_yjit": 99.90904564629896,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#bebebe"
@@ -64362,15 +64398,6 @@
       "benchmark": "structaref",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 10.674807406338493,
-          "compile_time_ms": 2.001505,
-          "ratio_in_yjit": 71.30389914064268,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 10.701780964972132,
@@ -65261,6 +65288,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 10.81668978998909,
+          "compile_time_ms": 1.944083,
+          "ratio_in_yjit": 71.30379713966006,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#80ff80"
@@ -65270,15 +65306,6 @@
       "benchmark": "structaset",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.4534875418770556,
-          "compile_time_ms": 1.562236,
-          "ratio_in_yjit": 72.97807616683752,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.447112540506995,
@@ -66169,6 +66196,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.4054021952318356,
+          "compile_time_ms": 1.523365,
+          "ratio_in_yjit": 73.39111927690767,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#80c9ff"
@@ -66178,15 +66214,6 @@
       "benchmark": "sudoku",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 3.605586514592114,
-          "compile_time_ms": 20.287788,
-          "ratio_in_yjit": 99.68430118167166,
-          "side_exits": 2,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 3.5968184532318093,
@@ -67077,6 +67104,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 3.634304652044676,
+          "compile_time_ms": 19.582814,
+          "ratio_in_yjit": 99.68425284181615,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ffc080"
@@ -67086,15 +67122,6 @@
       "benchmark": "throw",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 1.642138335238178,
-          "compile_time_ms": 1.581506,
-          "ratio_in_yjit": 99.98784177590139,
-          "side_exits": 0,
-          "invalidation_count": 0,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 1.6512640711348592,
@@ -67985,6 +68012,15 @@
           "side_exits": 0,
           "invalidation_count": 0,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 1.6679798255350877,
+          "compile_time_ms": 1.560024,
+          "ratio_in_yjit": 99.9874562589534,
+          "side_exits": 0,
+          "invalidation_count": 0,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#ffe680"
@@ -67994,15 +68030,6 @@
       "benchmark": "tinygql",
       "platform": "aarch64",
       "data": [
-        {
-          "time": "2026-03-01 00:58:27",
-          "yjit_speedup": 2.166408512693572,
-          "compile_time_ms": 23.958989,
-          "ratio_in_yjit": 99.99422420026562,
-          "side_exits": 2,
-          "invalidation_count": 5,
-          "ruby_desc": "19b636d3ec"
-        },
         {
           "time": "2026-03-02 00:52:23",
           "yjit_speedup": 2.188005921918427,
@@ -68893,6 +68920,15 @@
           "side_exits": 0,
           "invalidation_count": 5,
           "ruby_desc": "354806506c"
+        },
+        {
+          "time": "2026-07-04 01:00:31",
+          "yjit_speedup": 2.167748263071562,
+          "compile_time_ms": 23.30977,
+          "ratio_in_yjit": 99.99412920625548,
+          "side_exits": 0,
+          "invalidation_count": 5,
+          "ruby_desc": "e70011179e"
         }
       ],
       "color": "#aa80ff"
