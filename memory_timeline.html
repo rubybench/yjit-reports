@@ -964,62 +964,74 @@
         </span>
       </li>
       
-        <li style="display: none" data-benchmark="structaref">
+        <li style="display: none" data-benchmark="string_malloc_pressure">
         <span style='background: #00cc00'>&nbsp;&nbsp;
+          <strong style="color: white;">string_malloc_pressure no-jit</strong> &nbsp;&nbsp;
+        </span>
+      </li>
+      
+        <li style="display: none" data-benchmark="string_malloc_pressure">
+        <span style='background: #0066b3'>&nbsp;&nbsp;
+          <strong style="color: white;">string_malloc_pressure yjit</strong> &nbsp;&nbsp;
+        </span>
+      </li>
+      
+        <li style="display: none" data-benchmark="structaref">
+        <span style='background: #ff8000'>&nbsp;&nbsp;
           <strong style="color: white;">structaref no-jit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="structaref">
-        <span style='background: #0066b3'>&nbsp;&nbsp;
+        <span style='background: #ffcc00'>&nbsp;&nbsp;
           <strong style="color: white;">structaref yjit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="structaset">
-        <span style='background: #ff8000'>&nbsp;&nbsp;
+        <span style='background: #330099'>&nbsp;&nbsp;
           <strong style="color: white;">structaset no-jit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="structaset">
-        <span style='background: #ffcc00'>&nbsp;&nbsp;
+        <span style='background: #990099'>&nbsp;&nbsp;
           <strong style="color: white;">structaset yjit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="sudoku">
-        <span style='background: #330099'>&nbsp;&nbsp;
+        <span style='background: #ccff00'>&nbsp;&nbsp;
           <strong style="color: white;">sudoku no-jit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="sudoku">
-        <span style='background: #990099'>&nbsp;&nbsp;
+        <span style='background: #ff0000'>&nbsp;&nbsp;
           <strong style="color: white;">sudoku yjit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="throw">
-        <span style='background: #ccff00'>&nbsp;&nbsp;
+        <span style='background: #808080'>&nbsp;&nbsp;
           <strong style="color: white;">throw no-jit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="throw">
-        <span style='background: #ff0000'>&nbsp;&nbsp;
+        <span style='background: #008f00'>&nbsp;&nbsp;
           <strong style="color: white;">throw yjit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="tinygql">
-        <span style='background: #808080'>&nbsp;&nbsp;
+        <span style='background: #00487d'>&nbsp;&nbsp;
           <strong style="color: white;">tinygql no-jit</strong> &nbsp;&nbsp;
         </span>
       </li>
       
         <li style="display: none" data-benchmark="tinygql">
-        <span style='background: #008f00'>&nbsp;&nbsp;
+        <span style='background: #b35a00'>&nbsp;&nbsp;
           <strong style="color: white;">tinygql yjit</strong> &nbsp;&nbsp;
         </span>
       </li>
@@ -1712,8 +1724,17 @@
     
     
     <li>
-      <input type="checkbox" data-benchmark="structaref" />
+      <input type="checkbox" data-benchmark="string_malloc_pressure" />
       <span style='background: #00cc00'>
+        &nbsp;&nbsp; <strong style="color: white;">string_malloc_pressure</strong> &nbsp;&nbsp;
+      </span>
+    </li>
+  
+    
+    
+    <li>
+      <input type="checkbox" data-benchmark="structaref" />
+      <span style='background: #ff8000'>
         &nbsp;&nbsp; <strong style="color: white;">structaref</strong> &nbsp;&nbsp;
       </span>
     </li>
@@ -1722,7 +1743,7 @@
     
     <li>
       <input type="checkbox" data-benchmark="structaset" />
-      <span style='background: #ff8000'>
+      <span style='background: #330099'>
         &nbsp;&nbsp; <strong style="color: white;">structaset</strong> &nbsp;&nbsp;
       </span>
     </li>
@@ -1731,7 +1752,7 @@
     
     <li>
       <input type="checkbox" data-benchmark="sudoku" />
-      <span style='background: #330099'>
+      <span style='background: #ccff00'>
         &nbsp;&nbsp; <strong style="color: white;">sudoku</strong> &nbsp;&nbsp;
       </span>
     </li>
@@ -1740,7 +1761,7 @@
     
     <li>
       <input type="checkbox" data-benchmark="throw" />
-      <span style='background: #ccff00'>
+      <span style='background: #808080'>
         &nbsp;&nbsp; <strong style="color: white;">throw</strong> &nbsp;&nbsp;
       </span>
     </li>
@@ -1749,7 +1770,7 @@
     
     <li>
       <input type="checkbox" data-benchmark="tinygql" />
-      <span style='background: #808080'>
+      <span style='background: #00487d'>
         &nbsp;&nbsp; <strong style="color: white;">tinygql</strong> &nbsp;&nbsp;
       </span>
     </li>
