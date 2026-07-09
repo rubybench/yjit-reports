@@ -212,33 +212,35 @@
 
         <li style="display: none" data-benchmark="send_rubyfunc_block"><span style='background: #808080'>&nbsp;&nbsp; <strong style="color: white;">send_rubyfunc_block</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="sequel"><span style='background: #008f00'>&nbsp;&nbsp; <strong style="color: white;">sequel</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="send_rubyfunc_inline"><span style='background: #008f00'>&nbsp;&nbsp; <strong style="color: white;">send_rubyfunc_inline</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="setivar"><span style='background: #00487d'>&nbsp;&nbsp; <strong style="color: white;">setivar</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="sequel"><span style='background: #00487d'>&nbsp;&nbsp; <strong style="color: white;">sequel</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="setivar_object"><span style='background: #b35a00'>&nbsp;&nbsp; <strong style="color: white;">setivar_object</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="setivar"><span style='background: #b35a00'>&nbsp;&nbsp; <strong style="color: white;">setivar</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="setivar_young"><span style='background: #b38f00'>&nbsp;&nbsp; <strong style="color: white;">setivar_young</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="setivar_object"><span style='background: #b38f00'>&nbsp;&nbsp; <strong style="color: white;">setivar_object</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="setivar_young_object"><span style='background: #6b006b'>&nbsp;&nbsp; <strong style="color: white;">setivar_young_object</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="setivar_young"><span style='background: #6b006b'>&nbsp;&nbsp; <strong style="color: white;">setivar_young</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="shipit"><span style='background: #8fb300'>&nbsp;&nbsp; <strong style="color: white;">shipit</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="setivar_young_object"><span style='background: #8fb300'>&nbsp;&nbsp; <strong style="color: white;">setivar_young_object</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="splay"><span style='background: #b30000'>&nbsp;&nbsp; <strong style="color: white;">splay</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="shipit"><span style='background: #b30000'>&nbsp;&nbsp; <strong style="color: white;">shipit</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="str_concat"><span style='background: #bebebe'>&nbsp;&nbsp; <strong style="color: white;">str_concat</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="splay"><span style='background: #bebebe'>&nbsp;&nbsp; <strong style="color: white;">splay</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="string_malloc_pressure"><span style='background: #80ff80'>&nbsp;&nbsp; <strong style="color: white;">string_malloc_pressure</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="str_concat"><span style='background: #80ff80'>&nbsp;&nbsp; <strong style="color: white;">str_concat</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="structaref"><span style='background: #80c9ff'>&nbsp;&nbsp; <strong style="color: white;">structaref</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="string_malloc_pressure"><span style='background: #80c9ff'>&nbsp;&nbsp; <strong style="color: white;">string_malloc_pressure</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="structaset"><span style='background: #ffc080'>&nbsp;&nbsp; <strong style="color: white;">structaset</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="structaref"><span style='background: #ffc080'>&nbsp;&nbsp; <strong style="color: white;">structaref</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="sudoku"><span style='background: #ffe680'>&nbsp;&nbsp; <strong style="color: white;">sudoku</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="structaset"><span style='background: #ffe680'>&nbsp;&nbsp; <strong style="color: white;">structaset</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="throw"><span style='background: #aa80ff'>&nbsp;&nbsp; <strong style="color: white;">throw</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="sudoku"><span style='background: #aa80ff'>&nbsp;&nbsp; <strong style="color: white;">sudoku</strong> &nbsp;&nbsp;</span> </li>
 
-        <li style="display: none" data-benchmark="tinygql"><span style='background: #ee00cc'>&nbsp;&nbsp; <strong style="color: white;">tinygql</strong> &nbsp;&nbsp;</span> </li>
+        <li style="display: none" data-benchmark="throw"><span style='background: #ee00cc'>&nbsp;&nbsp; <strong style="color: white;">throw</strong> &nbsp;&nbsp;</span> </li>
+
+        <li style="display: none" data-benchmark="tinygql"><span style='background: #ff8080'>&nbsp;&nbsp; <strong style="color: white;">tinygql</strong> &nbsp;&nbsp;</span> </li>
 
     </ul>
   </div>
@@ -731,99 +733,106 @@
     </li>
   
     <li>
-      <input type="checkbox" data-benchmark="sequel" />
+      <input type="checkbox" data-benchmark="send_rubyfunc_inline" />
       <span style='background: #008f00'>&nbsp;&nbsp;
+        <strong style="color: white;">send_rubyfunc_inline</strong> &nbsp;&nbsp;
+      </span>
+    </li>
+  
+    <li>
+      <input type="checkbox" data-benchmark="sequel" />
+      <span style='background: #00487d'>&nbsp;&nbsp;
         <strong style="color: white;">sequel</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="setivar" />
-      <span style='background: #00487d'>&nbsp;&nbsp;
+      <span style='background: #b35a00'>&nbsp;&nbsp;
         <strong style="color: white;">setivar</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="setivar_object" />
-      <span style='background: #b35a00'>&nbsp;&nbsp;
+      <span style='background: #b38f00'>&nbsp;&nbsp;
         <strong style="color: white;">setivar_object</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="setivar_young" />
-      <span style='background: #b38f00'>&nbsp;&nbsp;
+      <span style='background: #6b006b'>&nbsp;&nbsp;
         <strong style="color: white;">setivar_young</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="setivar_young_object" />
-      <span style='background: #6b006b'>&nbsp;&nbsp;
+      <span style='background: #8fb300'>&nbsp;&nbsp;
         <strong style="color: white;">setivar_young_object</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="shipit" />
-      <span style='background: #8fb300'>&nbsp;&nbsp;
+      <span style='background: #b30000'>&nbsp;&nbsp;
         <strong style="color: white;">shipit</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="splay" />
-      <span style='background: #b30000'>&nbsp;&nbsp;
+      <span style='background: #bebebe'>&nbsp;&nbsp;
         <strong style="color: white;">splay</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="str_concat" />
-      <span style='background: #bebebe'>&nbsp;&nbsp;
+      <span style='background: #80ff80'>&nbsp;&nbsp;
         <strong style="color: white;">str_concat</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="string_malloc_pressure" />
-      <span style='background: #80ff80'>&nbsp;&nbsp;
+      <span style='background: #80c9ff'>&nbsp;&nbsp;
         <strong style="color: white;">string_malloc_pressure</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="structaref" />
-      <span style='background: #80c9ff'>&nbsp;&nbsp;
+      <span style='background: #ffc080'>&nbsp;&nbsp;
         <strong style="color: white;">structaref</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="structaset" />
-      <span style='background: #ffc080'>&nbsp;&nbsp;
+      <span style='background: #ffe680'>&nbsp;&nbsp;
         <strong style="color: white;">structaset</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="sudoku" />
-      <span style='background: #ffe680'>&nbsp;&nbsp;
+      <span style='background: #aa80ff'>&nbsp;&nbsp;
         <strong style="color: white;">sudoku</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="throw" />
-      <span style='background: #aa80ff'>&nbsp;&nbsp;
+      <span style='background: #ee00cc'>&nbsp;&nbsp;
         <strong style="color: white;">throw</strong> &nbsp;&nbsp;
       </span>
     </li>
   
     <li>
       <input type="checkbox" data-benchmark="tinygql" />
-      <span style='background: #ee00cc'>&nbsp;&nbsp;
+      <span style='background: #ff8080'>&nbsp;&nbsp;
         <strong style="color: white;">tinygql</strong> &nbsp;&nbsp;
       </span>
     </li>
